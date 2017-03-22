@@ -7,9 +7,9 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
+export default{
+  data(){
+    return{
       a: '你好'
     }
   }
