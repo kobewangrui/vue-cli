@@ -1,15 +1,16 @@
-import Vue from 'vue'
-import Router from 'vue-router'
 import Hello from '@/components/Hello'
 
-Vue.use(Router)
-
-export default new Router({
-  routes: [
+export default function (VueRouter) {
+  const routes = [
     {
       path: '/',
       name: 'Hello',
       component: Hello
     }
   ]
-})
+  const router = new VueRouter({
+    mode: 'history',
+    routes
+  })
+  return router
+}
