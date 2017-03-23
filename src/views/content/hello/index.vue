@@ -1,6 +1,7 @@
+<style src="assets/a.css" scoped></style>
 <template>
   <div>
-      hello----->index.vue
+      <p>hello----->index.vue</p>
       <img :src="require('assets/logo.png')">
   </div>
 </template>

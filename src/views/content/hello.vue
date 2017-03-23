@@ -1,9 +1,8 @@
-<!--<style>
+<style scoped>
   body{
-    background: red;
+    background: gray;
   }
-</style>-->
-<!--<style src="assets/a.css" scoped></style>-->
+</style>
 <template>
   <div>
     hello header
