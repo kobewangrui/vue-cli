@@ -1,11 +1,14 @@
-import Hello from 'components/Hello'
-
 export default function (VueRouter) {
   const routes = [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      component: require('views/hello.vue'),
+      children:[
+        {
+          path:'index',
+          component:require('views/hello/index.vue')
+        }
+      ]
     }
   ]
   const router = new VueRouter({
