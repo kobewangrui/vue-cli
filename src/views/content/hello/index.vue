@@ -1,4 +1,9 @@
 <style src="assets/a.css" scoped></style>
+<style scoped>
+  p{
+    color:#fff;  
+  }
+</style>
 <template>
   <div>
       <p>hello----->index.vue</p>
