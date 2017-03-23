@@ -1,3 +1,9 @@
+<!--<style>
+  body{
+    background: red;
+  }
+</style>-->
+<style src="assets/a.css" scoped></style>
 <template>
   <div>
     hello header
@@ -7,3 +13,15 @@
     hello footer
   </div>
 </template>
+<script>
+  export default{
+    data(){
+      return{
+
+      }
+    },
+    created(){
+      console.log("123")
+    }
+  }
+</script>
