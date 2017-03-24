@@ -6,6 +6,8 @@ import frame from 'views/frame'
 import Router from './router/index'
 import Resource from 'vue-resource'
 import  $ from 'jquery'
+import 'swiper'
+// import 'swiper'
 // 全局化jquery
 window.jquery = window.$ = $
 Vue.use(VueRouter)
