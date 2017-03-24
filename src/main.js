@@ -5,6 +5,9 @@ import VueRouter from 'vue-router'
 import frame from 'views/frame'
 import Router from './router/index'
 import Resource from 'vue-resource'
+import  $ from 'jquery'
+// 全局化jquery
+window.jquery = window.$ = $
 Vue.use(VueRouter)
 Vue.use(Resource)
 Vue.config.productionTip = false
