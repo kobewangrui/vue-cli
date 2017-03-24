@@ -6,9 +6,8 @@ export default{
     },
     mounted(){
         // console.log(swiper)
-        $('img').click(function(){
-            // $('').slideToggle(100)
-            alert()
+        $('.a').click(function(){
+            $('.aa').slideToggle(100)
         })
         this.swiper()
     },

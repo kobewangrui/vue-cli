@@ -1,5 +1,5 @@
 <style scoped>
-    body{
+    div{
         color:green;
     }
 </style>
