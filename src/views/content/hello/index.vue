@@ -11,6 +11,7 @@
 </style>
 <template>
   <div>
+      <router-link to="/">返回首页</router-link>
       <!--<p class="a">hello-index.vue</p>-->
       <!--<img class="aa" :src="require('assets/logo.png')">-->
       <!--{{s}}-->

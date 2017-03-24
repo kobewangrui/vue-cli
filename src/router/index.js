@@ -7,6 +7,10 @@ export default function (VueRouter) {
         {
           path:'index',
           component:require('views/content/hello/index.vue')
+        },        
+        {
+          path:'hello2',
+          component:require('views/content/hello/hello2.vue')
         }
       ]
     }
