@@ -5,11 +5,13 @@ import VueRouter from 'vue-router'
 import frame from 'views/frame'
 import Router from './router/index'
 import Resource from 'vue-resource'
+import WebUploader from 'WebUploader'
 import  $ from 'jquery'
 import 'swiper'
-// import 'swiper'
 // 全局化jquery
 window.jquery = window.$ = $
+// 全局化webuploader
+window.WebUploader = WebUploader
 Vue.use(VueRouter)
 Vue.use(Resource)
 Vue.config.productionTip = false
