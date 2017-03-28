@@ -1,15 +1,19 @@
 export default{
     data(){
         return{
-            s:'aaaaaaaa'
+            s:'aaaaaaaa',
+            imgShow:true
         }
     },
     mounted(){
         // console.log(swiper)
-        $('.a').click(function(){
-            $('.aa').slideToggle(100)
-        })
+        // $('.a').click(function(){
+        //     $('.aa').slideToggle(100)
+        // })
         this.swiper()
+
+
+        
     },
     methods:{
         //轮播图
@@ -19,6 +23,14 @@ export default{
                 pagination: '.swiper-pagination',
                 paginationClickable: true
             });
+        },
+        imgToggle(){
+            this.imgShow = !this.imgShow;
+            // if(this.imgShow === false){
+            //     this.imgShow = true
+            // }else{
+            //     this.imgShow = false
+            // }
         }
     }
 }

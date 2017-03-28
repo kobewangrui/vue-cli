@@ -2,6 +2,10 @@
 </style>
 <template>
     <div>
+        <form action="" id="login">
+            <input type="text" placeholder="userName" name="username">
+            <input type="submit" value="submit">
+        </form>
     <router-link to="/">返回首页</router-link>
     <div id="uploader-img">
         <div id="fileList" class="uploader-list"></div>
@@ -16,6 +20,20 @@
             }
         },
         mounted(){
+            $("#login").validate({
+                rules:{
+                    username:'required'
+                },
+                messages:{
+                    username:'用户名不能为空'
+                },
+                submitHandler:function(form){
+                    alert("submit");
+                    form.submit();
+                }
+            })
+
+
             // 初始化Web Uploader
             WebUploader.create({
 

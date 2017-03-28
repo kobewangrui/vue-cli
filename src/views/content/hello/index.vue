@@ -8,12 +8,23 @@
     width:200px;
     height:100px;
   }
+.aa{
+    transition: all .3s ease;
+  }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 </style>
 <template>
   <div>
       <router-link to="/">返回首页</router-link>
-      <p class="a">hello-index.vue</p>
-      <img class="aa" :src="require('assets/logo.png')">
+      <p class="a" @click="imgToggle">hello-index.vue</p>
+      <transition name="fade">  
+        <img class="aa" :src="require('assets/logo.png')" v-if="imgShow" v-transition>
+      </transition>
       {{s}}
       <!-- Swiper -->
       <div class="swiper-container">
