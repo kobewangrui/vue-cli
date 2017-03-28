@@ -7,6 +7,7 @@ import Router from './router/index'
 import Resource from 'vue-resource'
 import WebUploader from 'WebUploader'
 import  $ from 'jquery'
+import 'jquery-validation'
 import 'swiper'
 // 全局化jquery
 window.jquery = window.$ = $
