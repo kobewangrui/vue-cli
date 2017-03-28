@@ -1,0 +1,11 @@
+*{
+    padding:0;
+    margin:0;
+    border:none;
+}
+input{
+    outline:none;
+}
+body{
+    font-family:"Microsoft Yahei","微软雅黑",'华文细黑',Tahoma,Arial,Helvetica,STHeiti;
+}
