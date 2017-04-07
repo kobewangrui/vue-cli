@@ -15,6 +15,7 @@
     float:left;
     position:relative;
     border:1px solid #57c8f2;
+    z-index:2;
 }
 .left-nav ul li{
     height:60px;
@@ -31,7 +32,7 @@
     display:inline-block;
     width:64px;
     font-size:16px;
-    color:#fff;
+    color:#464646;
 }
 .left-nav ul li>p.routeShow{
     padding-left:20px;
@@ -54,7 +55,7 @@
     -moz-transform:scale(.7,.8);
     -o-transform:scale(.7,.8);
     transform:scale(.7,1.2);
-    margin-left:130px;
+    margin-left:128px;
 }
 .hover-show{
     width:560px;
