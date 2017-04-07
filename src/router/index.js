@@ -2,7 +2,7 @@ export default function (VueRouter) {
   const routes = [
     {
       path: '/',
-      component: require('views/content/hello.vue'),
+      component: require('views/content/index.vue'),
       children:[
         {
           path:'index',
