@@ -2,9 +2,9 @@
 </style>
 <template>
   <div>
-    <head></head>
+    <mall-head></mall-head>
     <router-view></router-view>
-    <foot></foot>
+    <mall-foot></mall-foot>
   </div>
 </template>
 <script>
@@ -15,8 +15,8 @@
       }
     },
     components:{
-      'head':require('components/head.vue'),
-      'foot':require('components/foot.vue'),
+      'mall-head':require('components/head.vue'),
+      'mall-foot':require('components/foot.vue')
     }
   }
 </script>
