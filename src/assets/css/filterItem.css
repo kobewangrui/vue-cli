@@ -1,0 +1,40 @@
+input[type='checkbox'],
+input[type='radio']{
+    display:none;
+}
+label,
+.filter .filter-all{
+    cursor:pointer;
+}
+.filter{
+    margin-bottom:20px;
+}
+.filter:last-child{
+    margin-bottom:0;
+}
+.filter .label,
+.filter .filter-all,
+.filter .dateChoose button{
+    display:inline-block;
+    padding:5.5px 11px;
+    margin-right:11px;
+}
+.filter .filter-title{
+    margin-right:30px;
+    display:inline-block;
+    width:70px;
+}
+.filter .filter-all{
+    border-radius:4px;
+    margin-right:12px;
+}
+.filter .filter-item input[type='checkbox']:checked + .label,
+.filter .filter-item input[type='radio']:checked + .label{
+    border-radius:4px;
+    background:#57c8f2;
+    color:#fff;
+}
+.filter .checkedAll{
+    background:#57c8f2;
+    color:#fff;
+}

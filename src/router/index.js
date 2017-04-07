@@ -8,6 +8,10 @@ export default function (VueRouter) {
           path:'/',
           component:require('views/content/index/index.vue')
         },
+        {
+          path:'/product',
+          component:require('views/content/product/route/list.vue')
+        },
       ]
     }
   ]

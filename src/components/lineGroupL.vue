@@ -45,10 +45,12 @@ export default{
                     hots:['北京','上海','广州','深圳']
                 },
                 INLAND:{
-                    title:'国内线路'
+                    title:'国内线路',
+                    hots:['北京','上海','广州','深圳']
                 },
                 OVERSEAS:{
-                    title:'出境线路'
+                    title:'出境线路',
+                    hots:['北京','上海','广州','深圳']
                 }
             }
         }
