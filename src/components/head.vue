@@ -68,15 +68,15 @@
 		<div class="third">
 			<div class="container">
 				<ul class="nav">
-					<router-link to="/mall" tag="li">首页</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='NEARBY'}" :to="{path:'/mall/route',query:{routeCategroy:'NEARBY'}}" tag="li">周边</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='INLAND'}" :to="{path:'/mall/route',query:{routeCategroy:'INLAND'}}" tag="li">国内</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='OVERSEAS'}" :to="{path:'/mall/route',query:{routeCategroy:'OVERSEAS'}}" tag="li">出境</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='SPECIAL'}" :to="{path:'/mall/route',query:{routeCategroy:'SPECIAL'}}" tag="li">特价</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='CRUISES'}" :to="{path:'/mall/route',query:{routeCategroy:'CRUISES'}}" tag="li">邮轮</router-link>
-					<router-link :class="{'active':$route.query.routeCategroy=='DRIVE_SELF'}" :to="{path:'/mall/route',query:{routeCategroy:'DRIVE_SELF'}}" tag="li">自驾</router-link>
-					<router-link  to="/mall/visa" tag="li">签证</router-link>
-					<router-link class="firmInf" to="/mall/brandList" tag="li">商家</router-link>
+					<router-link to="/" tag="li" exact>首页</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'NEARBY'}}" tag="li" exact>周边</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'INLAND'}}" tag="li" exact>国内</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'OVERSEAS'}}" tag="li" exact>出境</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'SPECIAL'}}" tag="li" exact>特价</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'CRUISES'}}" tag="li" exact>邮轮</router-link>
+					<router-link :to="{path:'/product',query:{routeCategroy:'DRIVE_SELF'}}" tag="li" exact>自驾</router-link>
+					<!--<router-link  to="/product" tag="li">签证</router-link>-->
+					<!--<router-link class="firmInf" to="/product" tag="li">商家</router-link>-->
 				</ul>
 			</div>
 		</div>
