@@ -1,10 +1,10 @@
 <style scoped>
-  body{
-    background: gray;
-  }
 </style>
 <template>
   <div>
+    <head></head>
+    <router-view></router-view>
+    <foot></foot>
   </div>
 </template>
 <script>
@@ -15,7 +15,8 @@
       }
     },
     components:{
-      'date':require('components/date.vue')
+      'head':require('components/head.vue'),
+      'foot':require('components/foot.vue'),
     }
   }
 </script>
