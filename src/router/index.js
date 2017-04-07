@@ -5,7 +5,7 @@ export default function (VueRouter) {
       component: require('views/content/mall.vue'),
       children:[
         {
-          path:'index',
+          path:'/',
           component:require('views/content/index/index.vue')
         },
       ]
