@@ -51,7 +51,7 @@
                 </div>
             </div> 
         </div>
-        <!--<div class="line">
+        <div class="line">
             <line-group-l routeCategroy="NEARBY"></line-group-l>
             <line-group-r routeCategroy="NEARBY"></line-group-r>
         </div>
@@ -62,7 +62,7 @@
         <div class="line">
             <line-group-l routeCategroy="OVERSEAS"></line-group-l>
             <line-group-r routeCategroy="OVERSEAS"></line-group-r>
-        </div>-->
+        </div>
     </div>
 </template>
 <script src="assets/js/index.js"></script>

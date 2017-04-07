@@ -74,8 +74,8 @@ export default {
         this.imgSwiper();
     },
     components:{
-        // "line-group-r":require('../../components/lineGroupR.vue'),
-        // "line-group-l":require('../../components/lineGroupL.vue')
+        "line-group-r":require('components/lineGroupR.vue'),
+        "line-group-l":require('components/lineGroupL.vue')
     },
     methods:{
         showCity(positionTop){

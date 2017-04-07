@@ -1,0 +1,62 @@
+<style lang="css" src="assets/css/index.css" scoped></style>
+<template>
+    <div class="line-left">
+        <div class="line-title">
+            <span>{{categroy[routeCategroy].title}}</span>
+            <span>
+                <span  v-for="item in categroy[routeCategroy].hots">{{item}}<i></i></span>
+                <span class="hot">更多></span>
+            </span>
+        </div>
+        <div class="product-show">
+             <div v-for="(item,$index) in 12" :class="{'first':$index == 0}">
+                    <template v-if="$index%2==0">
+                        <span class="TAC">TAC</span>
+                    </template>
+                    <template v-else>
+                        <span class="spicial">特价</span>
+                    </template>
+                <img :src="require('assets/image/1.jpg')" alt="线路展示">
+                <p class="ellipsis">昆达利撒发射点发射点发生十分士大夫</p>
+                <p>
+                    <!--<span class="original-price">原价：￥1231</span>-->
+                        <template v-if="$index!=0">
+                            <span>余量：8</span>
+                        </template>
+                        <template v-else>
+                            <span>陕中旅雁塔路分公司</span>
+                        </template>
+                        <span>￥12313</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+<script>    
+export default{
+    props:[
+        "routeCategroy"
+    ],
+    data(){
+        return{
+            categroy:{
+                NEARBY:{
+                    title:'周边线路',
+                    hots:['北京','上海','广州','深圳']
+                },
+                INLAND:{
+                    title:'国内线路'
+                },
+                OVERSEAS:{
+                    title:'出境线路'
+                }
+            }
+        }
+    },
+    beforeMount(){
+        // $.post('/rest/product/route/onSale',{pageSize:12,routeCategroy:this.routeCategroy},(resp)=>{
+        //     this.routes=resp.data
+        // })
+    }
+}
+</script>
