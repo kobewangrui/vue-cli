@@ -26,7 +26,7 @@
                         <span></span>
                         <input type="text" placeholder="请选择" v-model="query.end" readonly="true" @click="calendarToggle">
                         <button @click="dateSubmit">确定</button>
-                        <calendar  :inputDate1="start" v-if="calendarShow"></calendar>
+                        <!--<calendar  :inputDate1="start" v-if="calendarShow"></calendar>-->
                     </span>
                 </div>
                 <div class="filter">
@@ -77,85 +77,54 @@
             </div>
         </div>
         <ul>
-            <li class="line-outer" v-for="route in routes">
-                {{route | Route}}
+            <li class="line-outer" v-for="(route,$index) in 20">
                 <div class="line-img">
-                    <img :src="route.cover">
-                    <span class="after-group" v-if="route.groupWay=='PACKAGED'">跟团</span>
-                    <span class="ground" v-if="route.groupWay=='LOCAL'">地接</span>
-                    <span class="self" v-if="route.groupWay=='ALL_SELF'">自助</span>
-                    <span class="self" v-if="route.groupWay=='HALF_SELF'">半自助</span>
-                    <span class="liner" v-if="route.groupWay=='CRUISES'">邮轮</span>
-                    <span class="drive-self" v-if="route.groupWay=='DRIVE_SELF'">自驾</span>
+                    <img :src="require('assets/image/1.jpg')">
+                    <span class="after-group" v-if="$index%2==0">跟团</span>
+                    <span class="ground" v-else-if="$index%3==0">地接</span>
+                    <span class="self" v-else-if="$index%5==0">自助</span>
+                    <span class="self" v-else-if="$index%6==0">半自助</span>
+                    <span class="liner" v-else-if="$index%7==0">邮轮</span>
+                    <span class="drive-self" v-else-if="$index%8==0">自驾</span>
                 </div>
                 <div class="line-detail">
-                    <p class="ellipsis">{{route.title}}</p>
+                    <p class="ellipsis">实力肯定jfk老师讲课了jfk老师</p>
                     <p>
-                        <span class="right-now" v-if="route.immediatelyPay=='on'">即时</span>
-                        <span class="spicial-price" v-if="route.isSpecial=='Y'">特价</span>
-                        <span class="TAC" v-if="route.routeType=='TAC'">TAC</span>
+                        <span class="right-now" v-if="$index%5==0">即时</span>
+                        <span class="spicial-price" v-else-if="$index%4==0">特价</span>
+                        <span class="TAC" v-else-if="$index%6==0">TAC</span>
                     </p>
                     <p>
-                        <span>出发地：{{route.departure}}</span>
-                        <span>天数：{{route.days}}天</span>
+                        <span>出发地：山西</span>
+                        <span>天数：7天</span>
                     </p>
                     <p>
-                        最近团期：<span>{{route.closest().date | date_format('M-dd')}}</span><span>更多> ></span>
+                        最近团期：<span>2017-05-06</span><span>更多> ></span>
                     </p>
-                    <p>供应商：{{route.Org_OrganizationName}}</p>
-                    <router-link :to="{path:'/mall/routeDetail',query:{productId:route.productId}}" class="reserve" target="_blank">查看详情</router-link>
+                    <p>供应商：众信假期</p>
+                    <router-link :to="{path:'/mall/routeDetail',query:{productId:'cp1234567'}}" class="reserve" target="_blank">查看详情</router-link>
                     <!--<a href="javascript:void(0);" class="reserve" v-if="">暂无资质</a>-->
 
-
-                    <!--TAC或者特价(如果是tac成员，tac价格和特价显示最低的，非tac成员显示特价)-->
-                    <!--逻辑还需严谨，在最近团期TAC价格出现null时没有处理，TAC价格是否会为null，暂时认为TAC产品的每个团期都有TAC价格-->
-                    <!--TAC或特价线路逻辑-->
-
-                    <template v-if="($store.state.org.clubLevel=='TAC' && route.routeType=='TAC') || (route.closest().price.adult.special!=null && route.closest().price.adult.special!='-1')">
-                        <span class="originalPrice price">
+                        <!--<span class="originalPrice price">
                             <span>原结算价：</span>
                             <span>￥{{route.closest().price.adult.inner}}</span>
                         </span>
-                        <template v-if="$store.state.org.clubLevel=='TAC' && route.routeType=='TAC'">
-                            <template v-if="(route.closest().price.adult.special!=null && route.closest().price.adult.special!='-1')">
-                                <template v-if="Math.min(route.closest().price.adult.special,route.closest().price.adult.tac)==route.closest().price.adult.tac">
-                                    <span class="TACprice price">
-                                        <span>TAC价：</span>
-                                        <span>￥{{route.closest().price.adult.tac}}</span>
-                                    </span>
-                                </template>
-                                <template v-else>
-                                    <span class="spicialPrice price">
-                                        <span>特价：</span>
-                                        <span>￥{{route.closest().price.adult.special}}</span>
-                                    </span>
-                                </template>
-                            </template>
-                            <template v-else>
-                                <span class="spicialPrice price">
-                                    <span>特价：</span>
-                                    <span>￥{{route.closest().price.adult.special}}</span>
-                                </span>
-                            </template>
-                        </template>
-                        <template v-else>
-                            <span class="spicialPrice price">
-                                <span>特价：</span>
-                                <span>￥{{route.closest().price.adult.special}}</span>
-                            </span>
-                        </template>
-                    </template>
-                    <!--非TAC或特价线路逻辑-->
-                    <template v-else>
-                        <span class="innerPrice price">
-                            <span>结算价：</span>
-                            <span>￥{{route.closest().price.adult.inner}}</span>
+                        <span class="TACprice price">
+                            <span>TAC价：</span>
+                            <span>￥{{route.closest().price.adult.tac}}</span>
                         </span>
-                    </template>
+                        <span class="spicialPrice price">
+                            <span>特价：</span>
+                            <span>￥{{route.closest().price.adult.special}}</span>
+                        </span>-->
+                    <span class="innerPrice price">
+                        <span>结算价：</span>
+                        <span>￥1324</span>
+                    </span>
                 </div>
             </li>
         </ul>
-        <page :pageIndex="pageIndex" :pageCount="count" :paginate="paginate"></page>
+        <!--<page :pageIndex="pageIndex" :pageCount="count" :paginate="paginate"></page>-->
     </div>
 </template>
 <script src="assets/js/routeList.js"></script>

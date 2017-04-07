@@ -193,7 +193,7 @@ export default {
         },
         "query":{
             handler:function(){
-                this.$router.push({path:'/mall/route',query:Object.assign({},this.query)})
+                this.$router.push({path:'/product',query:Object.assign({},this.query)})
                 // $.get('/rest/market/market/marketShows',this.query,(resp)=>{
                 //     this.list = resp;
                 // })
