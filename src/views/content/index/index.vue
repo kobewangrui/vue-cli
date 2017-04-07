@@ -1,62 +1,70 @@
-<style scoped>
-</style>
+<style lang="css" src="assets/css/index.css" scoped></style>
 <template>
-    <div>
-        <form action="" id="login">
-            <input type="text" placeholder="userName" name="username">
-            <input type="submit" value="submit">
-        </form>
-    <router-link to="/">返回首页</router-link>
-    <div id="uploader-img">
-        <div id="fileList" class="uploader-list"></div>
-        <div id="filePicker">选择图片</div>
-    </div>
+    <div class="container">
+        <div class="outer">
+            <div class="left-nav">
+                <ul>
+                    <li v-for="(item,$key) in route">
+                        <p>
+                            <span>{{$key}}</span>
+                            <span>></span>
+                        </p>
+                        <p class="routeShow">
+                            <span v-for="i in item.showRoute">{{i}}</span>
+                        </p>
+                        <div class="hover-show">
+                            <div class="group" v-for="(list,$key) in item.list">
+                                <p class="title"><span></span>{{$key}}</p>
+                                <div class="city">
+                                <!--<router-link :to="/mall" :tag="span" v-for="city in list" class="hot">{{city}}</router-link>-->
+                                    <span v-for="city in list" class="hot">{{city}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img :src="require('assets/image/swiper1.jpg')">
+                        </div>
+                        <div class="swiper-slide">
+                            <img :src="require('assets/image/swiper2.jpg')">
+                        </div>
+                        <div class="swiper-slide">
+                            <img :src="require('assets/image/swiper3.jpg')">
+                        </div>
+                        <div class="swiper-slide">
+                            <img :src="require('assets/image/swiper4.jpg')">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <!--<div class="swiper-pagination"></div>-->
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="show-img">
+                    <img :src="require('assets/image/1.jpg')">
+                    <img :src="require('assets/image/2.jpg')">
+                    <img :src="require('assets/image/3.jpg')">
+                </div>
+            </div> 
+        </div>
+        <!--<div class="line">
+            <line-group-l routeCategroy="NEARBY"></line-group-l>
+            <line-group-r routeCategroy="NEARBY"></line-group-r>
+        </div>
+        <div class="line middle">
+            <line-group-l routeCategroy="INLAND"></line-group-l>
+            <line-group-r routeCategroy="INLAND"></line-group-r>
+        </div>
+        <div class="line">
+            <line-group-l routeCategroy="OVERSEAS"></line-group-l>
+            <line-group-r routeCategroy="OVERSEAS"></line-group-r>
+        </div>-->
     </div>
 </template>
-<script>
-    export default{
-        data(){
-            return{
-            }
-        },
-        mounted(){
-            $("#login").validate({
-                rules:{
-                    username:'required'
-                },
-                messages:{
-                    username:'用户名不能为空'
-                },
-                submitHandler:function(form){
-                    alert("submit");
-                    form.submit();
-                }
-            })
-
-
-            // 初始化Web Uploader
-            WebUploader.create({
-
-                // 选完文件后，是否自动上传。
-                auto: true,
-
-                // swf文件路径
-                swf: '/resources/lib/webuploader/Uploader.swf',
-
-                // 文件接收服务端。
-                server: 'http://webuploader.duapp.com/server/fileupload.php',
-
-                // 选择文件的按钮。可选。
-                // 内部根据当前运行是创建，可能是input元素，也可能是flash.
-                pick: '#filePicker',
-                duplicate:true,
-                // 只允许选择图片文件。
-                accept: {
-                    title: 'Images',
-                    extensions: 'gif,jpg,jpeg,bmp,png',
-                    mimeTypes: 'image/jpg,image/jpeg,image/png'
-                }
-            })
-        }
-    }
-</script>
+<script src="assets/js/index.js"></script>
