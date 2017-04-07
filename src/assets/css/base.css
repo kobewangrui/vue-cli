@@ -1,11 +1,47 @@
 *{
-    padding:0;
-    margin:0;
-    border:none;
-}
-input{
-    outline:none;
+	padding:0;
+	margin:0;
+	font-family:"Microsoft Yahei","微软雅黑",'华文细黑',Tahoma,Arial,Helvetica,STHeiti;
 }
 body{
-    font-family:"Microsoft Yahei","微软雅黑",'华文细黑',Tahoma,Arial,Helvetica,STHeiti;
+    background:rgb(248,248,248);
+    color:rgb(70,70,70);
+}
+input,button{
+	outline:none;
+}
+button,input[type='submit'],
+input[type='button']{
+	border:0;
+	cursor:pointer;
+	color:inherit;
+	font-family:inherit;
+	border-radius:4px;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	display:none;
+}
+input[type='text'].error{
+	border:#f00 solid 1px !important;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.ellipsis{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+label{
+	cursor:pointer;
 }
