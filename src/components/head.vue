@@ -4,7 +4,7 @@
 		<div class="first">
 			<div class="container">
 				<a class="logo">
-					<img src="../assets/image/logo.png" alt="旅游批发平台">
+					<img :src="require('assets/image/logo.png')" alt="旅游批发平台">
 				</a>
 				<div class="place">
 					<span>西安</span>
@@ -23,46 +23,44 @@
 					<input type="text" class="search_input" placeholder="三亚、泰国、兵马俑" v-model="keys">
 					<button type="submit" class="searchimg"></button>
 				</form>
-				<template v-if="$store.state.user.userId">
-					<ul class="first-right nav">
-						<li class="dropdown use">
-							<a href="javascript:void(0);" class="ellipsis"><img class="collect user-head"/><span class="username ellipsis">大锤大锤</span><span class="caret-down placeicon"></span></a>
-							<ul class="nav dropdown-menu userlog">
-								<li><a href="/ec">后台管理</a></li>
-								<li><a href="javascript:void(0);">订单管理</a></li>
-								<li><a href="javascript:void(0);">发布产品</a></li>
-								<li><a href="javascript:void(0);">账户管理</a></li>
-								<li><a href="javascript:void(0);">退出</a></li>
-							</ul>
-						</li>
-						<li class="dropdown messagelist">
-							<a href="javascript:void(0);">
-								<span class="message"></span>
-								<span class="messageT">消息</span>
-							</a>
-							<ul class="nav dropdown-menu">
-								<li><span>未读消息</span><span><a href="javascript:void(0);">查看全部</a></span></li>
-								<li>
-									<a href="javascript:void(0);">交易消息</a>
-									<p>您有新的订单需要确认</p>
-								</li>
-								<li>
-									<a href="javascript:void(0);">系统消息</a>
-									<p>您尚未绑定手机</p>
-								</li>
-							</ul>
-						</li>
-						<li class="dropdown wechatlist">
-							<a href="javascript:void(0);">
-								<span class="wechat"></span>
-								<span class="wechatT">微信</span>
-							</a>
-							<ul class="nav dropdown-menu TD-code">
-								<li></li>
-							</ul>
-						</li>
-					</ul>
-				</template>
+                <ul class="first-right nav">
+                    <li class="dropdown use">
+                        <a href="javascript:void(0);" class="ellipsis"><img class="collect user-head"/><span class="username ellipsis">大锤大锤</span><span class="caret-down placeicon"></span></a>
+                        <ul class="nav dropdown-menu userlog">
+                            <li><a href="javascript:void(0);">后台管理</a></li>
+                            <li><a href="javascript:void(0);">订单管理</a></li>
+                            <li><a href="javascript:void(0);">发布产品</a></li>
+                            <li><a href="javascript:void(0);">账户管理</a></li>
+                            <li><a href="javascript:void(0);">退出</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown messagelist">
+                        <a href="javascript:void(0);">
+                            <span class="message"></span>
+                            <span class="messageT">消息</span>
+                        </a>
+                        <ul class="nav dropdown-menu">
+                            <li><span>未读消息</span><span><a href="javascript:void(0);">查看全部</a></span></li>
+                            <li>
+                                <a href="javascript:void(0);">交易消息</a>
+                                <p>您有新的订单需要确认</p>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">系统消息</a>
+                                <p>您尚未绑定手机</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown wechatlist">
+                        <a href="javascript:void(0);">
+                            <span class="wechat"></span>
+                            <span class="wechatT">微信</span>
+                        </a>
+                        <ul class="nav dropdown-menu TD-code">
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
 			</div>
 		</div>
 		<div class="second">

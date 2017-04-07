@@ -23,7 +23,7 @@
 				<ul>
 					<li>媒体</li>
 					<li>官方微信</li>
-					<li><img src="../assets/image/TD-code.jpg"/></li>
+					<li><img :src="require('assets/image/TD-code.jpg')"/></li>
 				</ul>
 				<ul>
 					<li>400-9900-516</li>
