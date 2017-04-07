@@ -88,19 +88,18 @@ export default {
                 ele.style.display="none";
         },
         imgSwiper(){
-            var mySwiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.swiper-container', {
                 autoplay:true,
-                speed:2000,
-                direction: 'vertical',
-                loop: true,
-                effect: 'fade',
                 pagination: '.swiper-pagination',
-                paginationClickable :true,
-                paginationType:'bullets',
-                // 如果需要前进后退按钮
+                paginationClickable: true,
+                effect: 'cube',           
                 nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev'
-            })        
+                prevButton: '.swiper-button-prev',
+                parallax: true,
+                speed: 2000,
+                loop:true,
+                autoplayDisableOnInteraction:false,
+            }) 
         }
     }
 }

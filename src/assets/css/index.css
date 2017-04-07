@@ -6,7 +6,7 @@
     color:#ff6c60;
 }
 .left-nav{
-    width:240px;
+    width:238px;
     height:510px;
     background:#fff;
     border-radius:4px;
@@ -14,6 +14,7 @@
     margin-right:20px;
     float:left;
     position:relative;
+    border:1px solid #57c8f2;
 }
 .left-nav ul li{
     height:60px;
@@ -63,7 +64,7 @@
     position:absolute;
     left:240px;
     top:0;
-    z-index:1;
+    z-index:2;
     display:none;
 }
 .left-nav ul li:hover .hover-show{
@@ -106,44 +107,15 @@
     width:940px;
     height:360px;
     border-radius:4px;
-    overflow:hidden;
     margin-bottom:15px;
     position:relative;
 }
+.right-nav .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
 .right-nav .swiper-slide img{
     border-radius:4px;
-}
-.swiper-button-prev,
-.swiper-button-next{
-    cursor:pointer;
-    width:18px;
-    height:31px;
-    position:absolute;
-    background-image:url('../image/mall-icon.png');
-}
-.swiper-button-prev{
-    top:160px;
-    left:30px;
-    background-position:-50px -97px;
-}
-.swiper-button-next{
-    top:160px;
-    left:890px;
-    background-position:-108px -97px;
-}
-.swiper-pagination{
-    position:absolute;
-    bottom:100px;
-    margin:0 auto;
-    width:100px;
-    height:100px;
-    background:white;
-}
-.swiper-pagination .swiper-pagination-bullet{
-    display:inline-block!important;
-    width:50px!important;
-    height:50px!important;
-    background:blue!important;
 }
 .show-img img{
     width:300px;

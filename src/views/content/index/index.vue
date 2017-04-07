@@ -26,26 +26,24 @@
             </div>
             <div class="right-nav">
                 <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img :src="require('assets/image/swiper1.jpg')">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/swiper1.jpg')">
+                            </div>
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/swiper2.jpg')">
+                            </div>
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/swiper3.jpg')">
+                            </div>
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/swiper4.jpg')">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img :src="require('assets/image/swiper2.jpg')">
-                        </div>
-                        <div class="swiper-slide">
-                            <img :src="require('assets/image/swiper3.jpg')">
-                        </div>
-                        <div class="swiper-slide">
-                            <img :src="require('assets/image/swiper4.jpg')">
-                        </div>
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
                     </div>
-                    <!-- 如果需要分页器 -->
-                    <!--<div class="swiper-pagination"></div>-->
-                    <!-- 如果需要导航按钮 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
                 <div class="show-img">
                     <img :src="require('assets/image/1.jpg')">
                     <img :src="require('assets/image/2.jpg')">
