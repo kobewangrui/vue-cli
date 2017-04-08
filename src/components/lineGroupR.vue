@@ -11,7 +11,7 @@
                     </div>
                     <div class="hot-line-discribe">
                         <p class="ellipsis">速度了速度加快立法精神了肯定</p>
-                        <p>{{众信假期}}</p>
+                        <p>众信假期</p>
                         <p>
                             <span>销量 ：8</span>
                             <span>￥1000</span>
