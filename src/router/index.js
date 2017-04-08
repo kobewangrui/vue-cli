@@ -19,7 +19,17 @@ export default function (VueRouter) {
             {
               path:'/product/route/detail',
               component:require('views/content/product/route/detail.vue')
-            },
+            }
+          ]
+        },
+        {
+          path:'/order',
+          component:require('views/content/order.vue'),
+          children:[
+            {
+              path:'/',
+              component:require('views/content/order/submitOrder.vue')
+            }
           ]
         }
       ]
