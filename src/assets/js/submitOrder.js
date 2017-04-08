@@ -45,17 +45,7 @@ export default{
                 connectNumber:"required",
                 bornDate:"required"
             },
-            messages:{
-                contacts:"",
-                phoneNumber:"",
-                cnName:"",
-                enName1:"",
-                enName2:"",
-                cardName:"",
-                cardName2:"",
-                sex:"",
-                connectNumber:"",
-                bornDate:""
+            errorPlacement: function(error, element) {//隐藏验证消息
             },
             submitHandler:function(form){
                 alert("提交事件!");   
