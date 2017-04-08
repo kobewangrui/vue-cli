@@ -1,18 +1,22 @@
 <style lang="css" src="assets/css/routeDetail.css" scoped></style>
 <template>
     <div class="container">
-        {{route | Route}}
-        {{selectedPeriod==null?selectedPeriod=route.closest():selectedPeriod | hide}}
         <div class="detailOuter">
             <p class="detailOuterNav"><span>国内线路</span>><span>云南</span>><span>线路详情</span></p>
             <div class="detailHeader">
                 <div class="detailShow">
                     <div class="detailImg swiper-container">
-                        <!--<div class="swiper-wrapper">
-                            <div class="swiper-slide" v-for="(img,$index) in imgScroll">
-                                <img :src="img" :alt="'img'+$index">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/1.jpg')">
                             </div>
-                        </div>-->
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/2.jpg')">
+                            </div>
+                            <div class="swiper-slide">
+                                <img :src="require('assets/image/3.jpg')">
+                            </div>
+                        </div>
                         <!-- 如果需要分页器 -->
                         <!--<div class="swiper-pagination"></div>-->
                         <!-- 如果需要导航按钮 -->
