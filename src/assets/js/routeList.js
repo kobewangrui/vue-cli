@@ -185,9 +185,7 @@ export default {
     watch:{
         "$route.query":{
             handler:function(){
-                console.warn(this.$route.query)
                 this.fetchData()
-                console.warn("1")
             },
             deep:true
         },
@@ -204,11 +202,11 @@ export default {
     methods:{
         fetchData:function(){
             console.warn(this.$route.query.routeCategroy)
-            $.post('/rest/product/route/onSale',{routeCategroy:this.$route.query.routeCategroy},(resp)=>{
-                console.warn(resp.data)
-                this.routes=resp.data
-                this.paginate=resp.paginate
-            })
+            // $.post('/rest/product/route/onSale',{routeCategroy:this.$route.query.routeCategroy},(resp)=>{
+            //     console.warn(resp.data)
+            //     this.routes=resp.data
+            //     this.paginate=resp.paginate
+            // })
         },
         clear(item){
             this.query[item]=[];

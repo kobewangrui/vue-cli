@@ -1,0 +1,661 @@
+/*detailOuter*/
+.detailOuter .detailOuterNav{
+    margin:15px 0 5px 0;
+}
+.detailOuter .detailOuterNav span{
+    font-size:14px;
+    color:#666;
+}
+.detailOuter .detailHeader{
+    background:#fff;
+    padding:20px;
+    border-radius:4px;
+}
+.detailOuter .detailHeader .detailIntro{
+    float:right;
+    width:655px;
+}
+.detailOuter .detailHeader .detailShow{
+    float:left;
+    margin-right:20px;
+}
+.detailOuter .detailHeader .detailShow{
+    position:relative;
+}
+.swiper-container{
+    width:480px;
+    height:270px;
+}
+.detailOuter .detailHeader .detailShow .detailImg img{
+    width:480px;
+    height:270px;
+    border-radius:4px;
+    overflow:hidden;
+}
+.detailOuter .detailHeader .detailShow .detailImg span{
+    display:inline-block;
+    width:60px;
+    height:30px;
+    border-radius:4px 0 0 0;
+    color:#fff;
+    position:absolute;
+    text-align:center;
+    line-height:30px;
+    font-size:14px;
+    top:0;
+    left:0;
+}
+.detailOuter .detailHeader .detailShow .detailImg>span.after-group{
+    background:#ff6c60;
+}
+.detailOuter .detailHeader .detailShow .detailImg>span.ground{
+    background:#41cac0;
+}
+.detailOuter .detailHeader .detailShow .detailImg>span.self,
+.detailOuter .detailHeader .detailShow .detailImg>span.half-self{
+    background:#57c8f2;
+}
+.detailOuter .detailHeader .detailShow .detailImg>span.liner{
+    background:#f8d347;
+}
+.detailOuter .detailHeader .detailShow .detailImg>span.drive-self{
+    background:#95d532;
+}
+/*价格日历*/
+.detailOuter .detailHeader .detailShow .calendar{
+    width:480px;
+    height:275px;
+    border:1px solid #ccc;
+    margin-top:15px;
+    background:#fff;
+}
+.detailOuter .detailHeader .detailShow .calendar .headDate{
+    line-height:34px;
+    font-weight:bold;
+    font-size:14px;
+    color:#464646;
+    text-align:center;
+    position:relative;
+    background:#e7e9ee;
+}
+.detailOuter .detailHeader .detailShow .calendar .headDate .prevMonth,
+.detailOuter .detailHeader .detailShow .calendar .headDate .nextMonth{
+    color:#fff;
+    position:absolute;
+    transform:scale(1,1.8);
+}
+.detailOuter .detailHeader .detailShow .calendar .headDate .prevMonth{
+    left:30px;
+}
+.detailOuter .detailHeader .detailShow .calendar .headDate .nextMonth{
+    right:30px;
+}
+.detailOuter .detailHeader .detailShow .calendar .headDate .prevMonth:hover,
+.detailOuter .detailHeader .detailShow .calendar .headDate .nextMonth:hover{
+    cursor:pointer;
+    color:#41cac0;
+}
+.detailOuter .detailHeader .detailShow .calendar table{
+    border-collapse:collapse;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td{
+    width:68px;
+    height:42px;
+    cursor:pointer;
+    border:1px solid #f5f5f5;
+    position:relative;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td span.date{
+    position:absolute;
+    top:0;
+    left:5px;
+    font-size:12px;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td span.remained{
+    position:absolute;
+    top:0;
+    right:12px;
+    color:#ff6c60;
+    font-size:12px;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td span.remained>span{
+    color:#41cac0;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td span.price{
+    position:absolute;
+    top:20px;
+    right:3px;
+    font-size:12px;
+    color:#ff6c60;
+}
+.detailOuter .detailHeader .detailShow .calendar table tr td img{
+    position:absolute;
+    top:-1px;
+    right:-5px;
+}
+.detailOuter .detailHeader .detailShow .calendar .week{
+    background:#f1f2f7;
+    padding:0 20px;
+    text-align:center;
+    line-height:27px;
+}
+.detailOuter .detailHeader .detailShow .calendar  .week li{
+    width:28px;
+    float:left;
+    margin-left:40px;
+}
+.detailOuter .detailHeader .detailShow .calendar  .week li:first-child{
+    margin:0;
+}
+.detailOuter .detailHeader .detailShow .calendar .week:after{
+    content:'';
+    display:block;
+    overflow:hidden;
+    clear:both;
+    line-height:0;
+}
+.detailOuter .detailHeader .detailIntro .introTitle{
+    padding-bottom:20px;
+    border-bottom:1px solid #f1f2f7;
+}
+.detailOuter .detailHeader .detailIntro .introTitle .titleName{
+    font-size:22px;
+    color:#2a3542;
+}
+.detailOuter .detailHeader .detailIntro .introTitle .spicial,
+.detailOuter .detailHeader .detailIntro .introTitle .rightTime,
+.detailOuter .detailHeader .detailIntro .introTitle .TAC{
+    display:inline-block;
+    width:50px;
+    height:20px;
+    border-radius:4px;
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    line-height:20px;
+    margin-left:15px;
+}
+.detailOuter .detailHeader .detailIntro .introTitle .spicial{
+    background:#ff6c60;
+}
+.detailOuter .detailHeader .detailIntro .introTitle .rightTime{
+    background:#57c8f2;
+}
+.detailOuter .detailHeader .detailIntro .introTitle .TAC{
+    background:#41cac0;
+}
+.detailOuter .detailHeader .detailIntro .detailList{
+    color:#999;
+    border-bottom:1px solid #f1f2f7;
+    margin-top:15px;
+    padding-bottom:15px;
+    font-size:14px;
+}
+.detailOuter .detailHeader .detailIntro .detailList>p{
+    margin-bottom:15px;
+}
+.detailOuter .detailHeader .detailIntro .detailList>p:last-child{
+    margin-bottom:0;
+    line-height:21px;
+    height:42px;
+}
+.detailOuter .detailHeader .detailIntro .detailList .listDays{
+    margin-right:100px;
+}
+.detailOuter .detailHeader .detailIntro .detailList .listContent{
+    color:#464646;
+}
+.detailOuter .detailHeader .detailIntro .detailList .listQuestion{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    background:#f8d347;
+    border-radius:50%;
+    color:#fff;
+    text-align:center;
+    line-height:15px;
+    font-size:12px;
+    margin:0 20px 0 5px;
+}
+.detailOuter .detailHeader .detailIntro .detailList .listQuestion + span{
+    color:#ff6c60;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice{
+    padding-top:22px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice>p>span{
+    font-size:16px;
+    color:#464646;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.endPrice,
+.detailOuter .detailHeader .detailIntro .detailPrice p.beforePrice{
+    margin-bottom:5px;
+    position:relative;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.salePrice{
+    position:relative;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.beforePrice .beforeAdult,
+.detailOuter .detailHeader .detailIntro .detailPrice p.beforePrice .beforeChildren{
+    color:#999;
+    font-size:14px;
+    text-decoration:line-through;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.beforePrice .beforeChildren{
+    position:absolute;
+    left:350px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.endPrice .priceTitle,
+.detailOuter .detailHeader .detailIntro .detailPrice p.salePrice .priceTitle,
+.detailOuter .detailHeader .detailIntro .detailPrice p.beforePrice .priceTitle{
+    display:inline-block;
+    width:84px;
+    color:#999;
+    font-size:14px;
+    margin-right:40px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.endPrice .priceSymbol{
+    font-size:18px;
+    color:#ff6c60;
+    margin-right:3px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.salePrice .priceSymbol{
+    font-size:18px;
+    color:#41cac0;
+    margin-right:3px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.endPrice .postionChildren,
+.detailOuter .detailHeader .detailIntro .detailPrice p.salePrice .postionChildren{
+    position:absolute;
+    left:350px; 
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.endPrice .settlementPrice{
+    font-size:24px;
+    color:#ff6c60;
+    font-weight:bold;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.salePrice .retailPrice{
+    font-size:24px;
+    color:#41cac0;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.buyNow{
+    margin:23px 0 25px 0;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p .buyRoute,
+.detailOuter .detailHeader .detailIntro .detailPrice p .noJurisdiction,
+.detailOuter .detailHeader .detailIntro .detailPrice p .joinTravell{
+    display:inline-block;
+    width:178px;
+    height:48px;
+    text-align:center;
+    line-height:48px;
+    border-radius:4px;
+    font-size:18px;
+    border:1px solid #ff6c60;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p .noJurisdiction{
+    background:#ff6c60;
+    color:#fff;
+    margin:0 220px 0 133px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p .buyRoute{
+    background:#ff6c60;
+    color:#fff;
+    margin-left:133px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p .joinTravell{
+    background:#fff;
+    margin-left:35px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p .dealIntro{
+    color:#999;
+    font-size:14px;
+    margin-left:45px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share>span{
+    color:#999;
+    font-size:14px;
+    margin-right:55px;
+    cursor:pointer;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share span.weChat{
+    position:relative;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share span.weChat:hover .weChatShare{
+    display:block;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice .weChatShare{
+    width:84px;
+    height:100px;
+    padding:10px;
+    box-shadow:0 0 5px #ccc;
+    background:#fff;
+    position:absolute;
+    top:0px;
+    left:22px;
+    font-size:12px;
+    color:#999;
+    display:none;
+    text-align:center;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice .weChatShare img{
+    width:70px;
+    height:70px;
+    margin-bottom:5px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share img{
+    margin-right:5px;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share span,
+.detailOuter .detailHeader .detailIntro .detailPrice p.share img{
+    vertical-align:middle;
+}
+.detailOuter .detailHeader .detailIntro .detailPrice p.share span:hover{
+    color:#57c8f2;
+}
+
+/*brandIntro*/
+.brandIntro{
+  background: linear-gradient(to right, #57c8f2 , #fff);
+  background: -o-linear-gradient(to right, #57c8f2 , #fff);
+  background: -moz-linear-gradient(to right, #57c8f2 , #fff);
+  background: -webkit-linear-gradient(to right, #57c8f2 , #fff);
+  padding:20px;
+  margin:10px 0;
+}
+.brandIntro .brandImg{
+    width:100px;
+    height:60px;
+    border-radius:4px;
+    overflow: hidden;
+    margin-right:20px;
+}
+.brandIntro .brandImg,
+.brandIntro .brandName{
+    float:left;
+}
+.brandName p:first-child{
+    font-size:20px;
+    color:#2a3542;
+    margin:4px 0 2px;
+    max-width:800px;
+}
+.brandName p:last-child{
+    font-size:16px;
+    color:#fff;
+    max-width:800px;
+}
+.brandConnect{
+    float:right;
+}
+.brandConnect button{
+    width:100px;
+    height:35px;
+    border-radius:4px;
+    color:#fff;
+    font-size:14px;
+    margin-top:14px;
+}
+.brandConnect button:first-child{
+    background:#57c8f2;
+    margin-right:23px;
+}
+.brandConnect button:last-child{
+    background:#41cac0;
+}
+.brandIntro .brandPop{
+    position:fixed;
+    width:460px;
+    height:290px;
+    box-shadow:0px 0px 5px #ccc;
+    background:#fff;
+    left:35%;
+    top:35%;
+    border-radius:4px;
+    overflow:hidden;
+    z-index:4;
+    transform:scale(0,0);
+    transition:all 0.3s;
+}
+.brandIntro .brandPop .popConnect{
+    line-height:40px;
+    background:#2a3542;
+    color:#fff;
+    padding:0 20px;
+    position:relative;
+}
+.brandIntro .brandPop .popConnect span:last-child{
+    position:absolute;
+    right:20px;
+    bottom:2px;
+    transform:scale(1.5,1.5);
+    cursor:pointer;
+}
+.brandIntro .brandPop .popPeople{
+    width:420px;
+    height:50px;
+    line-height:50px;
+    margin:0 auto;
+    border-bottom:1px solid #ccc;
+}
+.brandIntro .brandPop .popPeople span:first-child{
+    color:#999;
+    font-size:14px;
+    margin-right:15px;
+}
+.brandIntro .brandPop .popDetail{
+    margin-top:30px;
+}
+.brandIntro .brandPop .popDetail img{
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    border: #ccc solid 1px;
+    margin: 0 60px 0 50px;
+    float: left;
+}
+.brandIntro .brandPop .popDetail .popDetails{
+    float: left;
+    font-size:14px;
+}
+.brandIntro .brandPop .popDetail .popDetails p{
+    line-height:27px;
+}
+.brandIntro .brandPop .popDetail .popDetails span{
+    display:inline-block;
+    width:42px;
+    color:#999;
+    text-align:left;
+}
+.brandIntro .popAnimation{
+    transform:scale(1,1);
+}
+.cover{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:3;
+    transform:scale(0,0);
+    display:none;
+    transition:all .2s;
+}
+.coverAnimation{
+    transform:scale(1,1);
+    display:block;
+}
+/*routeDetail*/
+.routeDetail{
+    background:#fff;
+    margin-bottom:60px;
+    font-size:14px;
+    color:#464646;
+    padding-bottom:40px;
+}
+.routeDetail .discription{
+    width:1100px;
+}
+.routeDetail .table{
+    width:1180px;
+    font-size:14px;
+    color:#464646;
+    padding-left:20px;
+    border-bottom:2px solid #41cac0;
+    background:#fff;
+    position:relative;
+    line-height:10px;
+    z-index:2;
+}
+.routeDetail .tableFixed{
+    position:fixed;
+    top:0;
+}
+.routeDetail .table li{
+    float:left;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    cursor:pointer;
+    margin-right:20px;
+}
+.routeDetail .table a{
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right:20px;
+}
+.active{
+    background:#41cac0;
+    color:#fff;
+}
+.active span.remained,
+.active span.remained>span,
+.active span.price{
+    color:#fff!important;
+}
+.routeDetail .table li.tableReserve,
+.routeDetail .table li.tableConnect{
+    width:120px;
+    padding:1px 0;
+    position:absolute;
+    top:0;
+    color:#fff;
+    font-size:16px;
+    display:none;
+}
+.routeDetail .table li.tableReserve{
+    right:-20px;
+    background:#ff6c60;
+}
+.routeDetail .table li.tableConnect{
+    right:100px;
+    background:#57c8f2;
+}
+.routeDetail .routeDetailtitle{
+    color:#ff6c60;
+    font-size:18px;
+    margin-bottom:12px;
+}
+.routeDetail .routeFeature,
+.routeDetail .costDetail,
+.routeDetail .remark{
+    padding:20px;
+    border-bottom:1px solid #f1f2f7;
+}
+.routeDetail .tripContent{
+    padding:20px 20px 0;
+    border-bottom:1px solid #f1f2f7;
+}
+.routeDetail .tripContent .daysNavOuter{
+    margin-left:-90px;
+    float:left;
+}
+.routeDetail .tripContent .daysNavOuterPosition{
+    position:fixed;
+    top:250px;
+}
+.routeDetail .tripContent .daysNav{
+    display:block;
+    width:60px;
+    height:28px;
+    background:#ccc;
+    text-align:center;
+    line-height:28px;
+    border-radius:4px;
+    margin-bottom:15px;
+}
+.routeDetail .tripContent .daysNavActive{
+    background:#57c8f2;
+    color:#fff;
+}
+.routeDetail .options{
+    padding:20px 20px 0;
+    position:relative;
+}
+.routeDetail .options .optionsIntro{
+    position:absolute;
+    color:#999;
+    top:22px;
+    left:75px;
+}
+.routeDetail .options .optionsDetail{
+    text-decoration:underline;
+    cursor:pointer;
+    margin-bottom:3px;
+}
+.routeDetail .options .optionsDetail:hover{
+    color:#57c8f2;
+}
+.tripContent .days{
+    margin-bottom:25px;
+}
+.tripContent .days .daysNumber,
+.tripContent .days .daysDetail{
+    float:left;
+}
+.tripContent .days .daysNumber{
+    font-size:16px;
+    width:60px;
+}
+.tripContent .days .daysDetail p:first-child{
+    margin-bottom:10px;
+}
+.tripContent .days .daysDetail .daysDetails>span{
+    background:#f1f2f7;
+    display:inline-block;
+    width:520px;
+    height:30px;
+    line-height:30px;
+    padding-left:20px;
+}
+.tripContent .days .daysDetail .daysDetails>span:first-child{
+    margin-right:15px;
+}
+.tripContent .days .daysDetail .daysImg{
+    margin:25px 0 10px 0;
+}
+.tripContent .days .daysDetail .daysImg img{
+    width:320px;
+    height:180px;
+    margin-right:65px;
+}
+.tripContent .days .daysDetail .daysImg img:last-child{
+    margin-right:0;
+}
+.detailOuter .detailHeader:after,
+.brandIntro:after,
+.routeDetail .table:after,
+.tripContent .days:after,
+.tripContent:after,
+.brandIntro .brandPop .popDetail:after{
+	content: "."; 
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
