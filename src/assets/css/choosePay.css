@@ -1,0 +1,405 @@
+/*order detail*/
+.orderDetail{
+    padding:20px 40px;
+    font-size:14px;
+    background:#fff;
+    position:relative;
+}
+.orderDetail p:nth-child(1){
+    margin-bottom:15px;
+}
+.orderDetail p:nth-child(1) .title{
+    margin-right:13px;
+}
+.orderDetail p:nth-child(1) .titles{
+    margin-left:33px;
+}
+.orderDetail p:nth-child(2){
+    position:absolute;
+    right:40px;
+    bottom:22px;
+}
+.orderDetail p:nth-child(2)>span{
+    font-size:24px;
+    color:#ff6c60;
+}
+.orderDetail p:nth-child(3){
+    color:#999;
+}
+
+/*payment method*/
+.payMethod{
+    padding:20px 20px 45px;
+    background:#fff;
+    margin:20px 0;
+    font-size:14px;
+}
+.payMethod .navTitle{
+    padding-left:20px;
+    background:#f1f2f7;
+    line-height:30px;
+}
+.payMethod .chooseMethod{
+    padding:20px;
+}
+.payMethod .chooseMethod .personal,
+.payMethod .chooseMethod .corporate{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 3px;
+}
+.payMethod .chooseMethod .labelImg,
+.payMethod .chooseMethod .labelImgs{
+    display:inline-block;
+    margin-right:45px;
+}
+.payMethod .chooseMethod .labelImgs{
+    margin-right:60px;
+}
+.payMethod .chooseMethod .corporate,
+.payMethod .chooseMethod .labelImgs,
+.payMethod .chooseMethod .labelImg{
+    vertical-align:middle;
+}
+.payMethod .chooseMethod #personal:checked + .personal,
+.payMethod .chooseMethod #corporate:checked + .corporate{
+    width: 7px;
+    height: 7px;
+    border: 3px solid #5fcbf3;
+}
+.payMethod .chooseMethod .payMethodDiscrib{
+    color:#999;
+    font-size:12px;
+}
+.chooseBank{
+    padding:20px 20px 30px;
+    border:1px  solid #f1f2f7;
+    border-radius:4px;
+}
+.chooseBank .card-table{
+    position:relative;
+}
+.chooseBank .card-table .bankName{
+    margin-bottom:18px;
+}
+.chooseBank .card-table .bankName input{
+    height:28px;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    margin-left:15px;
+    text-indent:5px;
+}
+.chooseBank .card-table .bankName .resetChoose{
+    width:96px;
+    height:30px;
+    border-radius:4px;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    margin-left:15px;
+    background:#41cac0;
+}
+.chooseBank  .card-table .toggle-outer{
+    padding-left:20px;
+    border-bottom:2px solid #41cac0;
+}
+.chooseBank  .card-table .toggle-table{
+    display:inline-block;
+    width:76px;
+    height:30px;
+    border:2px solid #41cac0;
+    color:#41cac0;
+    text-align:center;
+    line-height:30px;
+    border-radius:4px 4px 0 0;
+    position:relative;
+    top:2px;
+    border-bottom:2px solid #fff;
+    cursor:pointer;
+}
+.chooseBank .card-table span:nth-child(2){
+    left:5px;
+}
+.chooseBank  .card-table .currentTable{
+    background:#41cac0;
+    color:#fff;
+    border-bottom:2px solid #41cac0;
+}
+/*储蓄卡 信用卡*/
+.saving-fill,
+.credit-card{
+    padding-left:20px;
+}
+.saving-fill ul li,
+.credit-card ul li{
+    float:left;
+    border:1px solid #f1f2f7;
+    border-radius:4px;
+    overflow:hidden;
+    margin-right:20px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.saving-fill ul li span,
+.credit-card ul li span{
+    border:1px solid #fff;
+}
+.saving-fill ul .currentBank,
+.credit-card ul .currentBank{
+    border:2px solid #41cac0;
+}
+.saving-fill ul .currentBank span,
+.credit-card ul .currentBank span{
+    border:none;
+}
+
+/*储蓄卡*/
+.bank_icon li span{
+    display: block;
+    width:110px;
+    height: 40px;
+    background: url("../../assets/image/payment_bank.png") no-repeat;
+}
+.bank_icon .bank_1025{
+    background-position:-1px -1px;
+}
+.bank_icon .bank_1051{
+    background-position:-119px -1px;
+}
+.bank_icon .bank_104{
+    background-position:-238px -1px;
+}
+.bank_icon .bank_103{
+    background-position:-360px -1px;
+}
+
+
+.bank_icon .bank_3407{
+    background-position:-1px -55px;
+}
+.bank_icon .bank_3230{
+    background-position:-119px -55px;
+}
+.bank_icon .bank_3080{
+    background-position:-238px -55px;
+}
+.bank_icon .bank_313{
+    background-position:-360px -55px;
+}
+
+
+.bank_icon .bank_314{
+    background-position:-1px -109px;
+}
+.bank_icon .bank_309{
+    background-position:-119px -109px;
+}
+.bank_icon .bank_305{
+    background-position:-238px -109px;
+}
+.bank_icon .bank_312{
+    background-position:-360px -109px;
+}
+
+
+.bank_icon .bank_307{
+    background-position:-1px -163px;
+}
+.bank_icon .bank_326{
+    background-position:-119px -163px;
+}
+.bank_icon .bank_311{
+    background-position:-238px -163px;
+}
+.bank_icon .bank_310{
+    background-position:-360px -163px;
+}
+
+
+.bank_icon .bank_3061{
+    background-position:-1px -218px;
+}
+.bank_icon .bank_344{
+    background-position:-119px -218px;
+}
+.bank_icon .bank_335{
+    background-position:-238px -218px;
+}
+.bank_icon .bank_342{
+    background-position:-360px -218px;
+}
+
+
+.bank_icon .bank_317{
+    background-position:-1px -273px;
+}
+.bank_icon .bank_343{
+    background-position:-119px -273px;
+}
+.bank_icon .bank_316{
+    background-position:-238px -273px;
+}
+.bank_icon .bank_302{
+    background-position:-360px -273px;
+}
+
+.bank_icon .bank_324{
+    background-position:-1px -323px;
+}
+.bank_icon .bank_336{
+    background-position:-119px -323px;
+}
+.bank_icon .bank_401{
+    background-position:-238px -323px;
+}
+.bank_icon .bank_403{
+    background-position:-360px -323px;
+}
+
+
+.bank_icon .bank_404{
+    background-position:-1px -378px;
+}
+.bank_icon .bank_402{
+    background-position:-119px -378px;
+}
+.bank_icon .bank_3341{
+    background-position:-240px -378px;
+}
+
+
+/*信用卡*/
+.bank_icon .bank_1027{
+    background-position:-1px -1px;
+}
+.bank_icon .bank_1054{
+    background-position:-119px -1px;
+}
+.bank_icon .bank_106{
+    background-position:-238px -1px;
+}
+.bank_icon .bank_1031{
+    background-position:-360px -1px;
+}
+
+
+.bank_icon .bank_3011{
+    background-position:-1px -55px;
+}
+.bank_icon .bank_3231{
+    background-position:-119px -55px;
+}
+.bank_icon .bank_308{
+    background-position:-238px -55px;
+}
+.bank_icon .bank_3131{
+    background-position:-360px -55px;
+}
+
+
+.bank_icon .bank_3141{
+    background-position:-1px -109px;
+}
+.bank_icon .bank_3091{
+    background-position:-119px -109px;
+}
+.bank_icon .bank_3051{
+    background-position:-238px -109px;
+}
+.bank_icon .bank_3121{
+    background-position:-360px -109px;
+}
+
+
+.bank_icon .bank_3071{
+    background-position:-1px -163px;
+}
+.bank_icon .bank_3261{
+    background-position:-119px -163px;
+}
+.bank_icon .bank_3112{
+    background-position:-238px -163px;
+}
+.bank_icon .bank_3101{
+    background-position:-360px -163px;
+}
+
+
+.bank_icon .bank_306{
+    background-position:-1px -218px;
+}
+.bank_icon .bank_303{
+    background-position:-360px -273px;
+}
+.bank_icon .bank_3241{
+    background-position:-1px -323px;
+}
+.bank_icon .bank_4031{
+    background-position:-360px -323px;
+}
+
+
+.bank_icon .bank_334{
+    background-position:-240px -378px;
+}
+
+button.immediatelyPay{
+    display:inline-block;
+    width:160px;
+    height:40px;
+    color:white;
+    background:#57c8f2;
+    text-align:center;
+    line-height:40px;
+    font-size:16px;
+    border-radius:4px;
+    margin:30px 0 0 20px;
+}
+.payDetail table{
+    border-collapse:collapse;
+}
+.payDetail table tr{
+    color:#666;
+    border-bottom:1px solid #f1f2f7;
+    line-height:50px;
+    min-height:50px;
+}
+.payDetail table tr:first-child{
+    height:30px;
+    line-height:30px;
+    background:#f1f2f7;
+}
+.payDetail table tr td{
+    text-align:center;
+}
+.payDetail table tr td p{
+    line-height:15px;
+}
+.payDetail table tr td p:last-child{
+    line-height:25px;
+    font-size:10px;
+    color:#57c8f2;
+    margin:-2px 0 -5px;
+}
+.payDetail table tr td:first-child,
+.payDetail table tr td:nth-child(2),
+.payDetail table tr td:nth-child(3),
+.payDetail table tr td:nth-child(4){
+    width:191px;
+}
+.payDetail table tr td:nth-child(5){
+    width:315px;
+    border-left:1px solid #f1f2f7;
+}
+.saving-fill ul:after,
+.credit-card ul:after{
+    content: "."; 
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
