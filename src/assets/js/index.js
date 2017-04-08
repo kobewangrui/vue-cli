@@ -98,7 +98,7 @@ export default {
                 parallax: true,
                 speed: 2000,
                 loop:true,
-                autoplayDisableOnInteraction:false,
+                autoplayDisableOnInteraction:false
             }) 
         }
     }
