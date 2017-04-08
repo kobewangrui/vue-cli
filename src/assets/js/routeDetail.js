@@ -66,8 +66,6 @@ export default{
         this.getcurMonthDays(this.curYear,this.curMonth);
         //绘制当月日历
         this.days = this.init(this.curYear,this.curMonth);
-    },
-    updated(){
         this.imgSwiper();
         // this.activeDate();
         this.clickNav();
@@ -215,14 +213,15 @@ export default{
         imgSwiper(){
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:true,
-                speed:2000,
-                loop: true,
                 pagination: '.swiper-pagination',
-                paginationClickable :true,
-                paginationType:'bullets',
-                // 如果需要前进后退按钮
+                paginationClickable: true,
+                effect: 'cube',           
                 nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev'
+                prevButton: '.swiper-button-prev',
+                parallax: true,
+                speed: 2000,
+                loop:true,
+                autoplayDisableOnInteraction:false
             })        
         }
     }
