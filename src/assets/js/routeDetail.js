@@ -26,15 +26,15 @@ export default{
         }
     },
     beforeMount(){
-        $.ajax({
-                type:"post",
-                url:"/rest/product/route/one",
-                data:{productId:this.$route.query.productId},
-                async:false,
-                success:(resp)=>{
-                    this.route = resp.data;
-                }
-        })
+        // $.ajax({
+        //         type:"post",
+        //         url:"/rest/product/route/one",
+        //         data:{productId:this.$route.query.productId},
+        //         async:false,
+        //         success:(resp)=>{
+        //             this.route = resp.data;
+        //         }
+        // })
         // $.get('/rest/market/market/cover',{productId:this.productId},(resp)=>{
         //     this.imgScroll = resp.coverUrl;
         // });
@@ -216,9 +216,7 @@ export default{
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:true,
                 speed:2000,
-                direction: 'vertical',
                 loop: true,
-                effect: 'fade',
                 pagination: '.swiper-pagination',
                 paginationClickable :true,
                 paginationType:'bullets',
