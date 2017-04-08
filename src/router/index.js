@@ -10,12 +10,18 @@ export default function (VueRouter) {
         },
         {
           path:'/product',
-          component:require('views/content/product/route/list.vue')
-        },
-        {
-          path:'/product/route/detail',
-          component:require('views/content/product/route/detail.vue')
-        },
+          component:require('views/content/product.vue'),
+          children:[
+            {
+              path:'/',
+              component:require('views/content/product/route/list.vue')
+            },
+            {
+              path:'/product/route/detail',
+              component:require('views/content/product/route/detail.vue')
+            },
+          ]
+        }
       ]
     }
   ]
