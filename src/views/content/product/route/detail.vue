@@ -122,7 +122,7 @@
                         </p>
                         <p class="buyNow">
                             <!--<a href="javscript:void(0);" class="noJurisdiction">暂无权限</a>-->
-                            <router-link :to="{path:'/mall/submitOrderDomestic',query:{productId:route.productId,date:'2016-05-04'}}" class="buyRoute">立即预定</router-link>
+                            <router-link :to="{path:'/order',query:{productId:'cp10000',date:'2016-05-04'}}" class="buyRoute">立即预定</router-link>
                             <button class="joinTravell">加入收客</button>
                             <span class="dealIntro">交易说明</span>
                         </p>
