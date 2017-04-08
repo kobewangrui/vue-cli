@@ -1,0 +1,429 @@
+.container{
+    margin-bottom:80px;
+}
+/*订单详情*/
+.order-detail{
+    padding:20px;
+    background:#fff;
+    font-size:14px;
+    color:#464646;
+    border-radius:4px;
+}
+.order-detail .group-title{
+    line-height:30px;
+    background:#f1f2f7;
+    padding-left:20px;
+}
+.order-detail .group-content{
+    margin:20px 20px 0;
+    position:relative;
+}
+.order-detail .group-content .singlePrice{
+    color:#ff6c60;
+    margin-right:5px;
+}
+.order-detail .group-content .singlePrice{
+    color:#ff6c60;
+    margin-right:5px;
+}
+.order-detail .group-content .unit{
+    color:#666;
+    font-weight:bold;
+    font-size:14px;
+}
+.order-detail .group-content .allPrice{
+    color:#ff6c60;
+    margin:0 5px 0 15px;
+    font-weight:bold;
+    font-size:24px;
+}
+.order-detail .group-content .number input{
+    width:35px;
+    height:26px;
+    border:1px solid #ccc;
+    text-align:center;
+}
+.order-detail .group-content .number span{
+    display:inline-block;
+    width:22px;
+    height:26px;
+    border:1px solid #ccc;
+    text-align:center;
+    line-height:26px;
+    font-size:18px;
+    font-weight:bold;
+    color:#ccc;
+    cursor:pointer;
+}
+.order-detail .group-content .number span,
+.order-detail .group-content .number input{
+    vertical-align:middle;
+}
+.order-detail .group-content .number span:first-child{
+    border-radius:4px 0 0 4px;
+    border-right:0;
+}
+.order-detail .group-content .number span:last-child{
+    border-radius:0 4px 4px 0;
+    border-left:0;
+    margin-right:10px;
+}
+.order-detail .group-content .children{
+    margin-left:75px;
+}
+.order-detail .group-content .date input{
+    width:158px;
+    height:28px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    text-indent:1em;
+}
+.order-detail .border-line{
+    border-bottom:1px solid #f1f2f7;
+    margin:15px 20px 0;
+    padding-bottom:20px;
+}
+.order-detail .last-line{
+    margin-bottom:25px;
+}
+.order-detail .group-content .title{
+    display:inline-block;
+    width:70px;
+    margin-right:10px;
+    color:#999;
+}
+.order-detail .group-content .right{
+    position:absolute;
+    left:590px;
+}
+.order-detail .group-content .right .type{
+    display:inline-block;
+    width:50px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    font-size:14px;
+    color:white;
+    border-radius:4px;
+}
+.order-detail .group-content .right .after-group{
+    background:#ff6c60;
+}
+.order-detail .group-content .right .ground{
+    background:#41cac0;
+}
+.order-detail .group-content .right .self,
+.order-detail .group-content .right .half-self{
+    background:#57c8f2;
+}
+.order-detail .group-content .right .liner{
+    background:#f8d347;
+}
+.order-detail .group-content .right .drive-self{
+    background:#95d532;
+}
+.line-outer .line-detail{
+    margin-left:20px;
+    font-size:14px;
+    color:#999;
+    position:relative;
+}
+.order-detail .connect .connect-group{
+    margin:20px 0 0 29px;
+}
+.order-detail .connect .connect-group input{
+    width:158px;
+    height:28px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    text-indent:1em;
+}
+.order-detail .connect .connect-group .sign{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 7px;
+}
+ .order-detail .connect .connect-group #self-take:checked + .sign,
+.order-detail .connect .connect-group #express-take:checked + .sign{
+    width: 7px;
+    height: 7px;
+    border: 3px solid #41cac0;
+}
+.order-detail .connect .connect-group label{
+    color:#999;
+    display:inline-block;
+    margin-right:5px;
+}
+.order-detail .connect .connect-group .must{
+    width:65.5px;
+}
+.order-detail .connect .connect-group label[for="phoneNumber"]{
+    width:51.5px;
+}
+.order-detail .connect .connect-group #phoneNumber{
+    margin-right:75px;
+}
+.order-detail .connect .group-title + .connect-group input{
+    margin-right:55px;
+}
+.order-detail .connect .connect-group .province,
+.order-detail .connect .connect-group .city{
+    margin:0 20px 0 5px;
+}
+.order-detail .connect .connect-group .emailSub{
+    width:55.5px;
+    padding-left:10px;
+}
+.order-detail .connect .connect-group .emailSubInput{
+    width:438px;
+    margin-right:75px;
+}
+.order-detail .connect .connect-group .tecentSub{
+    padding-right:4px;
+}
+.order-detail .connect .connect-group .province-input,
+.order-detail .connect .connect-group .city-input{
+    width:128px;
+}
+.order-detail .connect .connect-group .detail-address{
+    width:678px;
+}
+.order-detail .connect .connect-group .must:before,
+.order-detail .traveller .exit-fill table tr td label.must:before{
+    content:"*";
+    color:#f00;
+    margin-right:3px;
+    position:relative;
+    top:2px;
+}
+.order-detail .traveller{
+    margin-top:30px;
+}
+.order-detail .traveller .traveller-table{
+    margin-top:18px;
+    border-bottom:2px solid #41cac0;
+    padding-left:20px;
+    position:relative;
+}
+.order-detail .traveller  .traveller-table .toggle-table{
+    display:inline-block;
+    width:76px;
+    height:30px;
+    border:2px solid #41cac0;
+    color:#41cac0;
+    text-align:center;
+    line-height:30px;
+    border-radius:4px 4px 0 0;
+    position:relative;
+    top:2px;
+    border-bottom:2px solid #fff;
+    cursor:pointer;
+}
+.traveller-table span:nth-child(2){
+    left:5px;
+}
+.order-detail .traveller  .traveller-table .currentTable{
+    background:#41cac0;
+    color:#fff;
+    border-bottom:2px solid #41cac0;
+}
+.order-detail .traveller  .traveller-table .right-intro-upload{
+    position:absolute;
+    right:0;
+    color:#999;
+    top:10px;
+}
+.order-detail .traveller  .traveller-table .fillColor{
+    color:#ff6c60;
+}
+.order-detail .traveller .upload{
+    margin:20px 0 0 20px;
+}
+.order-detail .traveller .upload .upload-btn{
+    display:inline-block;
+    width:98px;
+    height:28px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    line-height:28px;
+    text-align:center;
+    color:#666;
+    cursor:pointer;
+}
+.order-detail .traveller .upload .upload-btn>span:last-child{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:#fff;
+    background:#7fc23b;
+    border-radius:50%;
+}
+.order-detail .traveller  .traveller-table .upload-file{
+    margin-left:5px;
+}
+.order-detail .traveller .upload .upload-intro{
+    font-size:14px;
+    color:#999;
+    margin-left:15px;
+}
+.order-detail .traveller .exit-fill{
+    margin:20px 0 0 20px;
+}
+.order-detail .traveller .exit-fill .fill-adult,
+.order-detail .traveller .exit-fill .fill-children{
+    margin-bottom:15px;
+    border-bottom:1px solid #f1f2f7;
+    position:relative;
+}
+.exit-fill table tr{
+    display:inline-block;
+    margin-bottom:15px;
+}
+.order-detail .traveller .exit-fill table tr td:first-child{
+    width:75px;
+}
+.order-detail .traveller .exit-fill table tr:first-child td:first-child{
+    color:#57c8f2;
+}
+.order-detail .traveller .exit-fill table tr:nth-child(2) td:first-child span{
+    display:inline-block;
+    width:40px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    color:white;
+    border-radius:4px;
+    position:absolute;
+    top:45px;
+}
+.order-detail .traveller .exit-fill table tr:nth-child(2) td:first-child span.adult{
+    background:#ff857c;
+}
+.order-detail .traveller .exit-fill table tr:nth-child(2) td:first-child span.children{
+    background:#57c8f2;
+}
+.order-detail .traveller .exit-fill table tr td:nth-child(2),
+.order-detail .traveller .exit-fill table tr td:nth-child(4){
+    width:66px;
+    padding-right:15px;
+    text-align:right;
+}
+.order-detail .traveller .exit-fill table tr td:nth-child(3){
+    width:400px;
+}
+.order-detail .traveller .exit-fill table tr td:nth-child(5){
+    width:320px;
+}
+.order-detail .traveller .exit-fill table tr td input{
+    height:28px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding-left:5px;
+}
+.order-detail .traveller .exit-fill table tr td input.langest-input{
+    width:313px;
+}
+.order-detail .traveller .exit-fill table tr td input.langer-input{
+    width:193px;
+}
+.order-detail .traveller .exit-fill table tr td input.lang-input{
+    width:143px;
+}
+.order-detail .traveller .exit-fill table tr td input.short-input{
+    width:113px;
+}
+.order-detail .traveller .exit-fill table tr td input.shorter-input{
+    width:93px;
+}
+.order-detail .traveller .exit-fill table tr td input.margin15{
+    margin-left:15px;
+}
+.order-detail .traveller .exit-fill table tr td label.woman,
+.order-detail .traveller .exit-fill table tr td label.man{
+    width:11px;
+    height:11px;
+    display:inline-block;
+    border:1px solid #ccc;
+    border-radius:50%;
+    background:#fff;
+    margin-right:5px;
+}
+.order-detail .traveller .exit-fill table tr td .woman{
+    margin-left:15px;
+}
+.order-detail .traveller .exit-fill table tr td #woman:checked + .woman,
+.order-detail .traveller .exit-fill table tr td #man:checked + .man,
+.order-detail .traveller .exit-fill table tr td #womanc:checked + .woman,
+.order-detail .traveller .exit-fill table tr td #manc:checked + .man{
+    width:7px;
+    height:7px;
+    border:3px solid #41cac0;
+}
+.order-detail .traveller .exit-fill table tr td.cardList,
+.order-detail .traveller .exit-fill table tr td.cardListC{
+    position:relative;
+}
+.order-detail .traveller .exit-fill table tr td .cardUl{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 9px solid #57c8f2;
+    margin: 0 0 1px 2px;
+    position:absolute;
+    top:11px;
+    left:80px;
+}
+.order-detail .traveller .exit-fill table tr td .passCardList,
+.order-detail .traveller .exit-fill table tr td .passCardListC{
+    background:#fff;
+    width:98px;
+    border:1px solid #ccc;
+    position:absolute;
+    border-radius:4px;
+    overflow:hidden;
+    top:29px;
+    z-index:1;
+}
+.order-detail .traveller .exit-fill table tr td .passCardList li,
+.order-detail .traveller .exit-fill table tr td .passCardListC li{
+    line-height:33px;
+    height:33px;
+    text-align:left;
+    background:#fff;
+    cursor:pointer;
+    text-indent:5px;
+}
+.order-detail .traveller .exit-fill table tr td .passCardList li:hover,
+.order-detail .traveller .exit-fill table tr td .passCardListC li:hover{
+    background:#f1f2f7;
+}
+/*备注*/
+.order-detail .remarks .group-title{
+    margin:30px 0 20px 0;
+}
+.order-detail .remarks textarea{
+    width:1118px;
+    height:128px;
+    border:1px solid #ccc;
+    resize:none;
+    outline:none;
+    border-radius:4px;
+    margin-left:20px;
+    text-indent:1em;
+}
+.order-detail form .remarks .submit-btn{
+    width:160px;
+    height:40px;
+    background:#41cac0;
+    color:#fff;
+    display:block;
+    margin:35px auto 40px;
+}
+
