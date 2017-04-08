@@ -102,20 +102,20 @@
                         最近团期：<span>2017-05-06</span><span>更多> ></span>
                     </p>
                     <p>供应商：众信假期</p>
-                    <router-link :to="{path:'/mall/routeDetail',query:{productId:'cp1234567'}}" class="reserve" target="_blank">查看详情</router-link>
-                    <!--<a href="javascript:void(0);" class="reserve" v-if="">暂无资质</a>-->
+                    <router-link :to="{path:'/product/route/detail',query:{productId:'cp1234567'}}" class="reserve">查看详情</router-link>
+                    <!--<a href="javascript:void(0);" class="reserve">暂无资质</a>-->
 
                         <!--<span class="originalPrice price">
                             <span>原结算价：</span>
-                            <span>￥{{route.closest().price.adult.inner}}</span>
+                            <span>￥1234</span>
                         </span>
                         <span class="TACprice price">
                             <span>TAC价：</span>
-                            <span>￥{{route.closest().price.adult.tac}}</span>
+                            <span>￥1234</span>
                         </span>
                         <span class="spicialPrice price">
                             <span>特价：</span>
-                            <span>￥{{route.closest().price.adult.special}}</span>
+                            <span>￥1234}}</span>
                         </span>-->
                     <span class="innerPrice price">
                         <span>结算价：</span>
