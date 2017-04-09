@@ -20,7 +20,7 @@
 							</ul>
 						</li>
 					</ul>
-					<input type="text" class="search_input" placeholder="三亚、泰国、兵马俑" v-model="keys">
+					<input type="text" class="search_input" placeholder="三亚、泰国、兵马俑" v-model="keywords">
 					<button type="submit" class="searchimg"></button>
 				</form>
                 <ul class="first-right nav">
