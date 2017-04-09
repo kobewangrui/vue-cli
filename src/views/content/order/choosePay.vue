@@ -70,10 +70,10 @@
             </div>
           </div>
           <button @click="payDetail" class="immediatelyPay">立即支付</button>
-          <form id="pay" action="/pay" target="_blank" method="post">
-              <input type="text" name="orderId" v-model="$route.query.orderId"/>
-              <input type="text" name="payMethod" v-model="payMethod"/>
-              <input type="text" name="bankCode" v-model="currentId"/>
+          <form id="pay" action="/order/success" method="post">
+              <input type="hidden" name="orderId" v-model="$route.query.orderId"/>
+              <input type="hidden" name="payMethod" v-model="payMethod"/>
+              <input type="hidden" name="bankCode" v-model="currentId"/>
           </form>
       </div>
     </div>
