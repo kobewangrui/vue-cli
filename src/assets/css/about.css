@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    letter-spacing:1px;
+}
+.container{
+	margin: 15px auto 0;
+}
+.content-right{
+    width: 930px;
+    padding: 50px 55px;
+    background-color: #fff;
+    margin-bottom:60px;
+    border-radius:4px;
+    margin-left:270px;
+}
+.content-right img{
+    width: 820px;
+    height: 300px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.content-right .title{
+    font-size: 24px;
+    color: #000;
+    line-height: 50px;
+    border-bottom: #f1f2f7 solid 1px;
+}
+.content-right p{
+    color: #464646;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px 0 20px;
+}
