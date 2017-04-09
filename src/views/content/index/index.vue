@@ -16,8 +16,7 @@
                             <div class="group" v-for="(list,$key) in item.list">
                                 <p class="title"><span></span>{{$key}}</p>
                                 <div class="city">
-                                <!--<router-link :to="/mall" :tag="span" v-for="city in list" class="hot">{{city}}</router-link>-->
-                                    <span v-for="city in list" class="hot">{{city}}</span>
+                                    <router-link :to="{path:'/product',query:{keywords:city}}" tag="span" v-for="city in list" :key="city.id">{{city}}</router-link>
                                 </div>
                             </div>
                         </div>
