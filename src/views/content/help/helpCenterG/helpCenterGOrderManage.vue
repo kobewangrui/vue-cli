@@ -5,7 +5,7 @@
         <help-left></help-left>
         <div class="content-right">
             <ul v-if="isShow">
-                <li @click="act($index)" id="'question' + $index" v-for="(list,$index) in questionList"><span></span>{{list.tit}}</li>
+                <li @click="act($index)" :id="'question' + $index" v-for="(list,$index) in questionList"><span></span>{{list.tit}}</li>
             </ul>
             <template v-if="!isShow">
                 <a @click="close">返回上一级</a>

@@ -57,7 +57,6 @@ export default{
         },
         keepCurrentQuestion(){
             var questionId = "#" + this.$route.query.currentQuestion;
-            
             $(questionId).click();
         }
     },
