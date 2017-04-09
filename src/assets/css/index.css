@@ -230,6 +230,7 @@
 }
 .line .line-right ul li{
     margin-bottom:8px;
+    cursor:pointer;
 }
 .line .line-right .hot-line-img{
     position:relative;
