@@ -48,8 +48,9 @@ export default{
             errorPlacement: function(error, element) {//隐藏验证消息
             },
             submitHandler:function(form){
-                alert("提交事件!");   
-                form.submit();
+                //此处应该提交订单数据
+                window.location.href = 'order/pay'
+                return false
             }    
         })
         this.clickOtherHide();
