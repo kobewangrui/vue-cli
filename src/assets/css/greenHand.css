@@ -34,6 +34,12 @@
 .content-right table td .iconB{
     background-position:-125px -25px;
 }
+.content-right table td .iconC{
+    background-position:-225px -25px;
+}
+.content-right table td .iconD{
+    background-position:-325px -25px;
+}
 .content-right table td .iconE{
     background-position:-425px -25px;
 }
@@ -80,6 +86,12 @@
 }
 .content-right table td:hover .iconB{
     background-position:-125px -325px;
+}
+.content-right table td:hover .iconC{
+    background-position:-225px -325px;
+}
+.content-right table td:hover .iconD{
+    background-position:-325px -325px;
 }
 .content-right table td:hover .iconE{
     background-position:-425px -325px;

@@ -13,14 +13,14 @@
                         <p class="icon iconB"></p>
                         <p>平台规则</p>
                     </td>
-                    <router-link  tag="td" :to="{path:'/help/helpCenterRG', query:{currentQuestion:'question0'}}">
-                        <p class="icon iconN"></p>
-                        <p>收客系统</p>
-                    </router-link>
-                    <router-link to="/help/accountMan" tag="td">
-                        <p class="icon iconO"></p>
-                        <p>账号管理</p>
-                    </router-link>
+                    <td>
+                        <p class="icon iconC"></p>
+                        <p>服务协议</p>
+                    </td>
+                    <td>
+                        <p class="icon iconD"></p>
+                        <p>平台规范</p>
+                    </td>
                     <router-link to="/help/disclaimer" tag="td">
                         <p class="icon iconE"></p>
                         <p>免责申明</p>
@@ -60,6 +60,14 @@
                     <router-link  tag="td" :to="{path:'/help/helpCenterSP', query:{currentQuestion:'question5'}}">
                         <p class="icon iconM"></p>
                         <p>支付方式</p>
+                    </router-link>
+                    <router-link  tag="td" :to="{path:'/help/helpCenterRG', query:{currentQuestion:'question0'}}">
+                        <p class="icon iconN"></p>
+                        <p>收客系统</p>
+                    </router-link>
+                    <router-link to="/help/accountMan" tag="td">
+                        <p class="icon iconO"></p>
+                        <p>账号管理</p>
                     </router-link>
                 </tr>
             </table>
