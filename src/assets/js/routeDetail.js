@@ -215,7 +215,7 @@ export default{
                 autoplay:true,
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
-                effect: 'cube',           
+                effect: 'fade',           
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 parallax: true,
