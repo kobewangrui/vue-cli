@@ -1,0 +1,59 @@
+.page{
+    line-height:30px;
+    text-align:center;
+}
+.page .pageNav{
+    height:30px;
+    display:inline-block;
+    line-height:30px;
+    width:61px;
+    position: relative;
+    bottom: 8px;
+}
+.page ul{
+    display:inline-block;
+}
+.page ul li,
+.page .prevPage,
+.page .nextPage{
+    width:28px;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    border:1px solid #999;
+    color:#999;
+    border-radius:4px;
+    cursor:pointer;
+}
+.page .prevPage,
+.page .nextPage{
+    display:inline-block;
+    background:url('../../assets/image/pageIcon.png') no-repeat;
+}
+.page .nextPage{
+    transform:rotate(180deg);
+}
+.page .prevPage:hover,
+.page .nextPage:hover,
+.page ul li:hover{
+    border:1px solid #448bca;
+    color:#448bca;
+}
+.page ul li{
+    display:inline-block;
+    float:left;
+    margin-right:10px;
+}
+.page ul li.active{
+    border:1px solid #448bca;
+    color:#448bca;
+}
+.page ul li:last-child{
+    margin-right:0;
+}
+ul:after{
+    content:'';
+    display:block;
+    overflow:hidden;
+    clear:both;
+}
