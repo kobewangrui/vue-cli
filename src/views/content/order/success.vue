@@ -1,7 +1,7 @@
 <style lang="css" src="assets/css/success.css" scoped></style>
 <template>
     <div class="container">
-      <!--<pay-progress></pay-progress>-->
+      <progress-status status="c"></progress-status>
       <div class="orderStatusDetail">
         <span class="trueLogo">
           <span></span>

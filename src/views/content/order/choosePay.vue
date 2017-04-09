@@ -1,7 +1,7 @@
 <style lang="css" src="assets/css/choosePay.css" scoped></style>
 <template>
     <div class="container">
-      <!--<pay-progress status="b"></pay-progress>-->
+      <progress-status status="b"></progress-status>
       <div class="orderDetail">
           <p>
               <span class="title">订单编号：</span>589478632

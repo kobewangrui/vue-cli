@@ -1,7 +1,7 @@
 <style lang="css" src="assets/css/confirmOrder.css" scoped></style>
 <template>
     <div class="container">
-      <!--<pay-progress></pay-progress>-->
+      <progress-status status="a"></progress-status>
       <div class="order-detail">
         <form action="" id="orderSubmit" method="get">
           <div class="group">
