@@ -75,8 +75,7 @@
 					<router-link :to="{path:'/product',query:{routeCategroy:'SPECIAL'}}" tag="li" exact>特价</router-link>
 					<router-link :to="{path:'/product',query:{routeCategroy:'CRUISES'}}" tag="li" exact>邮轮</router-link>
 					<router-link :to="{path:'/product',query:{routeCategroy:'DRIVE_SELF'}}" tag="li" exact>自驾</router-link>
-					<!--<router-link  to="/product" tag="li">签证</router-link>-->
-					<!--<router-link class="firmInf" to="/product" tag="li">商家</router-link>-->
+					<router-link class="firmInf" to="/product" tag="li">商家</router-link>
 				</ul>
 			</div>
 		</div>
