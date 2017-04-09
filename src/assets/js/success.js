@@ -4,6 +4,6 @@ export default{
         }
     },
     components:{
-        // "pay-progress":require("components/payProgress.vue")
+        "progress-status":require("components/progress.vue")
     }
 }
