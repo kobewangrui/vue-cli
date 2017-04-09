@@ -2,7 +2,7 @@ export default{
     data(){
         return{
             query:{
-                "currentQuestion":""
+                "currentQuestion":undefined
             },
             "isShow":true,
             "actTit":"0",
@@ -42,10 +42,10 @@ export default{
         },
         close(){
             this.isShow = true;
-            this.query=[];
+            this.query.currentQuestion = undefined;
             this.$router.push({
                     path:'/help/helpCenterGOM',
-                    query:this.query
+                    query:this.query.currentQuestion
             });
         },
         keepCurrentQuestion(){
