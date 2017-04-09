@@ -4,7 +4,7 @@
         <div class="line-title">
             <span>{{categroy[routeCategroy].title}}</span>
             <span>
-                <span  v-for="item in categroy[routeCategroy].hots">{{item}}<i></i></span>
+                <router-link  tag="span"  :to="{path:'/product',query:{keywords:item}}" v-for="item in categroy[routeCategroy].hots">{{item}}<i></i></router-link>
                 <span class="hot">更多></span>
             </span>
         </div>
