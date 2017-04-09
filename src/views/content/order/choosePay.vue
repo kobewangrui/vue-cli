@@ -70,7 +70,7 @@
             </div>
           </div>
           <button @click="payDetail" class="immediatelyPay">立即支付</button>
-          <form id="pay" action="/order/success" method="post">
+          <form id="pay" action="/order/success" method="get">
               <input type="hidden" name="orderId" v-model="$route.query.orderId"/>
               <input type="hidden" name="payMethod" v-model="payMethod"/>
               <input type="hidden" name="bankCode" v-model="currentId"/>
