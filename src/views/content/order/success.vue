@@ -10,7 +10,7 @@
         <p>支付完成</p>
         <div class="detailLast">
           订单编号：<span>123456786521</span>
-          订单状态：<span>已确认</span>
+          订单状态：<span>已支付</span>
           <p>如有问题，请及时与卖家联系，以免造成损失</p>
         </div>
       </div>
