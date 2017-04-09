@@ -1,0 +1,178 @@
+.container{
+	margin: 15px auto 0;
+}
+.content-right{
+    background:white;
+    margin-bottom:20px;
+    border-radius:4px;
+}
+.content-right table{
+    border-collapse:collapse;
+}
+.content-right table td{
+    width:240px;
+    height:160px;
+    border:1px solid #f1f2f7;
+    text-align:center;
+    font-size:14px;
+    color:#464646;
+    cursor:pointer;
+}
+.content-right table td:hover p{
+    color:#57c8f2;
+}
+.content-right table td .icon{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:url("../../assets/image/helpIcon.png") no-repeat;
+    margin-bottom:10px;
+}
+.content-right table td .iconA{
+    background-position:-25px -25px;
+}
+.content-right table td .iconB{
+    background-position:-125px -25px;
+}
+.content-right table td .iconE{
+    background-position:-425px -25px;
+}
+
+
+
+.content-right table td .iconF{
+    background-position:-25px -125px;
+}
+.content-right table td .iconG{
+    background-position:-125px -125px;
+}
+.content-right table td .iconH{
+    background-position:-225px -125px;
+}
+.content-right table td .iconI{
+    background-position:-325px -125px;
+}
+.content-right table td .iconJ{
+    background-position:-425px -125px;
+}
+
+
+.content-right table td .iconK{
+    background-position:-25px -225px;
+}
+.content-right table td .iconL{
+    background-position:-125px -225px;
+}
+.content-right table td .iconM{
+    background-position:-225px -225px;
+}
+.content-right table td .iconN{
+    background-position:-325px -225px;
+}
+.content-right table td .iconO{
+    background-position:-425px -225px;
+}
+
+
+
+.content-right table td:hover .iconA{
+    background-position:-25px -325px;
+}
+.content-right table td:hover .iconB{
+    background-position:-125px -325px;
+}
+.content-right table td:hover .iconE{
+    background-position:-425px -325px;
+}
+
+
+
+.content-right table td:hover .iconF{
+    background-position:-25px -425px;
+}
+.content-right table td:hover .iconG{
+    background-position:-125px -425px;
+}
+.content-right table td:hover .iconH{
+    background-position:-225px -425px;
+}
+.content-right table td:hover .iconI{
+    background-position:-325px -425px;
+}
+.content-right table td:hover .iconJ{
+    background-position:-425px -425px;
+}
+
+
+.content-right table td:hover .iconK{
+    background-position:-25px -525px;
+}
+.content-right table td:hover .iconL{
+    background-position:-125px -525px;
+}
+.content-right table td:hover .iconM{
+    background-position:-225px -525px;
+}
+.content-right table td:hover .iconN{
+    background-position:-325px -525px;
+}
+.content-right table td:hover .iconO{
+    background-position:-425px -525px;
+}
+
+
+.connectUs{
+    width:1200px;
+    background:white;
+    margin-bottom:40px;
+}
+.connectUs li{
+    width:390px;
+    display:inline-block;
+    text-align:center;
+    border-right:1px solid #f1f2f7;
+    margin:35px 0;
+    cursor:pointer;
+}
+.connectUs li:nth-child(1) p:first-child{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:url("../../assets/image/question1.png");
+}
+.connectUs li:nth-child(2) p:first-child{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:url("../../assets/image/question2.png");
+}
+.connectUs li:nth-child(3) p:first-child{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:url("../../assets/image/question3.png");
+}
+.connectUs li:nth-child(1) p:nth-child(2),
+.connectUs li:nth-child(2) p:nth-child(2),
+.connectUs li:nth-child(3) p:nth-child(2){
+    margin:10px 0;
+    font-size:18px;
+    color:black;
+}
+.connectUs li:nth-child(1) p:nth-child(3),
+.connectUs li:nth-child(2) p:nth-child(3),
+.connectUs li:nth-child(3) p:nth-child(3){
+    font-size:26px;
+}
+.connectUs li:nth-child(1) p:nth-child(3){
+    color:#41cac0;
+}
+.connectUs li:nth-child(2) p:nth-child(3){
+    color:#ff6c60;
+}
+.connectUs li:nth-child(3) p:nth-child(3){
+    color:#57c8f2;
+}
+.connectUs li:last-child{
+    border:none;
+}
