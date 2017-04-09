@@ -168,8 +168,7 @@
     position:relative;
     cursor:pointer;
 }
-.line .line-left .product-show .spicial,
-.line .line-left .product-show .TAC{
+.line .line-left .product-show .spicial{
     display:inline-block;
     width:40px;
     height:20px;
@@ -181,9 +180,6 @@
     position:absolute;
     right:2px;
     top:2px;
-}
-.line .line-left .product-show .TAC{
-    background:#41cac0;
 }
 .line .line-left .product-show .spicial{
     background:#ff6c60;
