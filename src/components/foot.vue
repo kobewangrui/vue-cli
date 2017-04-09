@@ -5,20 +5,20 @@
 			<div class="footer-top">
 				<ul>
 					<li>关于</li>
-					<router-link to="/mall/about" tag="li">关于我们</router-link>
-					<router-link to="/mall/contact" tag="li">联系我们</router-link>
-					<router-link to="/mall/add" tag="li">加入我们</router-link>
+					<router-link to="/about" tag="li">关于我们</router-link>
+					<router-link to="/about/contact" tag="li">联系我们</router-link>
+					<router-link to="/about/add" tag="li">加入我们</router-link>
 				</ul>
 				<ul>
 					<li>帮助</li>
-					<router-link to="/mall/usuallyQuestion" tag="li">帮助手册</router-link>
+					<router-link to="/help/usuallyQuestion" tag="li">帮助手册</router-link>
 					<li>免责声明</li>
 					<li>意见反馈</li>
 				</ul>
 				<ul>
 					<li>合作</li>
-					<router-link to="/mall/cooperation" tag="li">广告合作</router-link>
-					<router-link to="/mall/popularize" tag="li">推广合作</router-link>
+					<router-link to="/about/cooperation" tag="li">广告合作</router-link>
+					<router-link to="/about/popularize" tag="li">推广合作</router-link>
 				</ul>
 				<ul>
 					<li>媒体</li>
