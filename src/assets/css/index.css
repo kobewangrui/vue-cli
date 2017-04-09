@@ -22,6 +22,9 @@
 .left-nav ul li:hover{
     background:#35404d;
 }
+.left-nav ul li:hover  p span.key{
+    color:#fff!important;
+}
 .left-nav ul li>p:first-child{
     margin-bottom:8px;
 }
