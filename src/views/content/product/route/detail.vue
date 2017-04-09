@@ -29,7 +29,7 @@
                         <!--<span class="liner">邮轮</span>-->
                         <!--<span class="drive-self">自驾</span>-->
                     </div>
-                    <!--<div class="calendar">
+                    <div class="calendar">
                         <p class="headDate">
                             <span class="prevMonth" @click="prevMonth"> < </span>
                             <span>{{curYear}}年{{curMonth}}月</span>
@@ -41,26 +41,26 @@
                         <table class="table">
                             <tr v-for="item in days">
                                 <td v-for="key in item" :class="{'active':new Date().getDate() == key}" :id="curYear+'-'+curMonth+'-'+key" @click="activeDate(curYear+'-'+curMonth+'-'+key)">
-                                        {{
+                                        <!--{{
                                             period=route.period().find((ele,index)=>{
                                             if(new Date(ele.date).format('yyyy-MM-dd')==new Date(curYear+"-"+curMonth+"-"+key).format('yyyy-MM-dd'))
                                                 return ele
                                             else
                                                 return false
                                             }) | hide
-                                        }}
+                                        }}-->
                                     <span class="date">{{key}}</span>
-                                    <span class="remained" v-if="period">
-                                        <span>余:</span>{{period.inventory}}
+                                    <span class="remained">
+                                        <span>余:</span>10
                                     </span>
-                                    <span class="price" v-if="period">
-                                        ￥{{period.price.adult.inner}}
+                                    <span class="price">
+                                        ￥1234
                                     </span>
-                                    <img :src="require('assets/image/specialSign.png')" alt="">
+                                    <!--<img :src="require('assets/image/specialSign.png')" alt="">-->
                                 </td>
                             </tr>
                         </table>
-                    </div>-->
+                    </div>
                 </div>               
                 <div class="detailIntro">
                     <div class="introTitle">
