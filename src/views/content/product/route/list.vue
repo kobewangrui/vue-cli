@@ -26,7 +26,7 @@
                         <span></span>
                         <input type="text" placeholder="请选择" v-model="query.end" readonly="true" @click="calendarToggle">
                         <button @click="dateSubmit">确定</button>
-                        <!--<calendar  :inputDate1="start" v-if="calendarShow"></calendar>-->
+                        <calendar  :inputDate1="start" v-if="calendarShow"></calendar>
                     </span>
                 </div>
                 <div class="filter">
@@ -124,7 +124,8 @@
                 </div>
             </li>
         </ul>
-        <!--<page :pageIndex="pageIndex" :pageCount="count" :paginate="paginate"></page>-->
+        {{pagiNate}}
+        <page :paginate='pagiNate'></page>
     </div>
 </template>
 <script src="assets/js/routeList.js"></script>
