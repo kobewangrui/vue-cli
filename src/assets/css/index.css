@@ -166,6 +166,7 @@
     margin:10px 15px 10px 0;
     float:left;
     position:relative;
+    cursor:pointer;
 }
 .line .line-left .product-show .spicial,
 .line .line-left .product-show .TAC{

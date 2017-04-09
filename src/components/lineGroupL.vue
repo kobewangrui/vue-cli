@@ -9,7 +9,7 @@
             </span>
         </div>
         <div class="product-show">
-             <div v-for="(item,$index) in 12" :class="{'first':$index == 0}">
+             <router-link tag="div" :to="{path:'/product/route/detail',query:{productId:'cp10000'}}" v-for="(item,$index) in 12" :class="{'first':$index == 0}" :key="item.id">
                     <template v-if="$index%2==0">
                         <span class="TAC">TAC</span>
                     </template>
@@ -19,16 +19,16 @@
                 <img :src="require('assets/image/1.jpg')" alt="线路展示">
                 <p class="ellipsis">昆达利撒发射点发射点发生十分士大夫</p>
                 <p>
-                    <!--<span class="original-price">原价：￥1231</span>-->
-                        <template v-if="$index!=0">
-                            <span>余量：8</span>
-                        </template>
-                        <template v-else>
-                            <span>陕中旅雁塔路分公司</span>
-                        </template>
-                        <span>￥12313</span>
+                <!--<span class="original-price">原价：￥1231</span>-->
+                    <template v-if="$index!=0">
+                        <span>余量：8</span>
+                    </template>
+                    <template v-else>
+                        <span>陕中旅雁塔路分公司</span>
+                    </template>
+                    <span>￥12313</span>
                 </p>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
