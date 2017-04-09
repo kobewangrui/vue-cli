@@ -10,7 +10,7 @@
                             <span>></span>
                         </p>
                         <p class="routeShow">
-                            <span v-for="i in item.showRoute">{{i}}</span>
+                            <router-link :to="{path:'/product',query:{keywords:i}}" tag="span" v-for="i in item.showRoute" :key="i.id">{{i}}</router-link>
                         </p>
                         <div class="hover-show">
                             <div class="group" v-for="(list,$key) in item.list">
