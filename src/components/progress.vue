@@ -3,7 +3,7 @@
     <div class="order-progress">
         <p class="order-status">
             <span>提交订单</span>
-            <span>支付中</span>
+            <span>支付</span>
             <span>支付完成</span>
         </p>
         <!--进度条有三个状态，故有a,b,c依次三种样式来分别代表三种状态-->
