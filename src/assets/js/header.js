@@ -1,7 +1,7 @@
 export default{
     data () {
         return {
-            keys:this.$route.query.keys,
+            keywords:this.$route.query.keys,
             path:"/product",
             "curSrh":"线路",
             "hide":false,
@@ -12,7 +12,7 @@ export default{
         let _self=this
         this.clickOtherHide();
         $("#search").submit(function(){
-            _self.$router.push({path:_self.path,query:{keys:_self.keys,routeCategroy:undefined}})
+            _self.$router.push({path:_self.path,query:{keywords:_self.keys,routeCategroy:undefined}})
             return false
         })
     },
