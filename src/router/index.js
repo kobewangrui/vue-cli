@@ -39,6 +39,94 @@ export default function (VueRouter) {
               component:require('views/content/order/success.vue')
             }
           ]
+        },        
+        {
+          path:'/help',
+          component:require('views/content/help.vue'),
+          children:[
+            { 
+              path: 'usuallyQuestion', 
+              component: require('views/content/help/usuallyQuestion.vue') 
+            },
+            { 
+              path: 'greenHand', 
+              component: require('views/content/help/greenHand.vue') 
+            },
+            { 
+              path: 'accountMan', 
+              component: require('views/content/help/accountManagement.vue') 
+            },
+            { 
+              path: 'disclaimer', 
+              component: require('views/content/help/disclaimer.vue') 
+            },
+            { 
+              path: 'gaiaTrip', 
+              component: require('views/content/help/gaiaTrip.vue') 
+            },
+            { 
+              path: 'helpCenterSP', 
+              component: require('views/content/help/helpCenterZ/helpCenterSearchProduct.vue') 
+            },
+            { 
+              path: 'helpCenterOM', 
+              component: require('views/content/help/helpCenterZ/helpCenterOrderManage.vue') 
+            },
+            { 
+              path: 'helpCenterTM', 
+              component: require('views/content/help/helpCenterZ/helpCenterTravellerMessage.vue') 
+            },
+            { 
+              path: 'helpCenterFD', 
+              component: require('views/content/help/helpCenterZ/helpCenterFinancialData.vue') 
+            },
+            { 
+              path: 'helpCenterRG', 
+              component: require('views/content/help/helpCenterZ/helpCenterReceiveGuest.vue') 
+            },
+            { 
+              path: 'helpCenterQC', 
+              component: require('views/content/help/helpCenterG/helpCenterQualificationCertification.vue') 
+            },
+            { 
+              path: 'helpCenterPM', 
+              component: require('views/content/help/helpCenterG/helpCenterProductManagement.vue') 
+            },
+            { 
+              path: 'helpCenterGOM', 
+              component: require('views/content/help/helpCenterG/helpCenterGOrderManage.vue') 
+            },
+            { 
+              path: 'helpCenterGFD', 
+              component: require('views/content/help/helpCenterG/helpCenterGFinancialData.vue') 
+            }
+          ]
+        },
+        { 
+          path: '/about', 
+          component: require('views/content/about.vue'),
+          children:[
+            { 
+              path: '/', 
+              component: require('views/content/about/aboutUs.vue') 
+            },
+            { 
+              path: 'add', 
+              component: require('views/content/about/add.vue') 
+            },
+            { 
+              path: 'contact', 
+              component: require('views/content/about/contact.vue') 
+            },
+            { 
+              path: 'cooperation', 
+              component: require('views/content/about/cooperation.vue') 
+            },
+            { 
+              path: 'popularize', 
+              component: require('views/content/about/popularize.vue') 
+            }
+          ]
         }
       ]
     }
