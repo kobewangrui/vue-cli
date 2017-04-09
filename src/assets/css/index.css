@@ -2,9 +2,6 @@
     margin-top:20px;
     margin-bottom:45px;
 }
-.hot{
-    color:#ff6c60;
-}
 .left-nav{
     width:238px;
     height:510px;
@@ -64,7 +61,7 @@
     background:#fff;
     position:absolute;
     left:240px;
-    top:0;
+    top:-1px;
     z-index:2;
     display:none;
 }
