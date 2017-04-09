@@ -6,7 +6,7 @@
                 <ul>
                     <li v-for="(item,$key) in route">
                         <p>
-                            <span>{{$key}}</span>
+                            <span class="key">{{$key}}</span>
                             <span>></span>
                         </p>
                         <p class="routeShow">
