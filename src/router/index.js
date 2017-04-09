@@ -33,6 +33,10 @@ export default function (VueRouter) {
             {
               path:'/order/pay',
               component:require('views/content/order/choosePay.vue')
+            },
+            {
+              path:'/order/success',
+              component:require('views/content/order/success.vue')
             }
           ]
         }
