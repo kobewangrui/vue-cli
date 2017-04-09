@@ -2,10 +2,10 @@
 <template>
     <div class="line-left">
         <div class="line-title">
-            <span>{{categroy[routeCategroy].title}}</span>
+            <span class="hot">{{categroy[routeCategroy].title}}</span>
             <span>
-                <router-link  tag="span"  :to="{path:'/product',query:{keywords:item}}" v-for="item in categroy[routeCategroy].hots">{{item}}<i></i></router-link>
-                <span class="hot">更多></span>
+                <router-link  tag="span"  :to="{path:'/product',query:{keywords:item}}" v-for="item in categroy[routeCategroy].hots" :key="item.id">{{item}}<i></i></router-link>
+                <router-link tag="span" :to="{path:'/product',query:{routeCategroy:url}}">更多 ></router-link>
             </span>
         </div>
         <div class="product-show">
@@ -39,6 +39,7 @@ export default{
     ],
     data(){
         return{
+            url:undefined,
             categroy:{
                 NEARBY:{
                     title:'周边线路',
@@ -59,6 +60,19 @@ export default{
         // $.post('/rest/product/route/onSale',{pageSize:12,routeCategroy:this.routeCategroy},(resp)=>{
         //     this.routes=resp.data
         // })
+    },
+    created(){
+        switch(this.routeCategroy){
+            case 'NEARBY':
+                this.url = 'NEARBY';
+                break;
+            case 'INLAND':
+                this.url = 'INLAND';
+                break;
+            case 'OVERSEAS':
+                this.url = 'OVERSEAS';
+                break;
+        }
     }
 }
 </script>
