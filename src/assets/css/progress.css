@@ -1,0 +1,99 @@
+.order-progress{
+    height:55px;
+    background:#fff;
+    margin:20px 0;
+    padding:30px 45px;
+    font-size:14px;
+    color:#464646;
+    border-radius:4px;
+}
+.order-progress .order-status{
+    margin-bottom:20px;
+}
+.order-progress .order-status span:nth-child(1){
+    margin-left:-13px;
+}
+.order-progress .order-status span:nth-child(2){
+    margin-left:485px;
+}
+.order-progress .order-status span:nth-child(3){
+    margin-left:470px;
+}
+.order-progress .progress-status{
+    position:relative;
+}
+.order-progress .progress-status .status-line{
+    margin:0 auto;
+    width:1050px;
+    height:10px;
+    background:#f1f2f7;
+}
+.order-progress .progress-status span:nth-child(1){
+    left:20px;
+}
+.order-progress .progress-status span:nth-child(2){
+    left:540px;
+}
+.order-progress .progress-status span:nth-child(3){
+    left:1060px;
+}
+.order-progress .progress-status .status-node{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#f1f2f7;
+    position:absolute;
+    top:-11px;
+}
+
+/*当前订单状态圆圈*/
+.order-progress .a .current-status-node1,
+.order-progress .b .current-status-node1,
+.order-progress .c .current-status-node1{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#41cac0;
+    position:absolute;
+    top:-3px;
+    left:8px;
+}
+.order-progress .b .current-status-node2,
+.order-progress .c .current-status-node2{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#41cac0;
+    position:absolute;
+    top:-3px;
+    left:547px;
+}
+.order-progress .c .current-status-node3{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#41cac0;
+    position:absolute;
+    top:-3px;
+    left:1067px;
+}
+.order-progress .b .current-status1{
+    height:5px;
+    background:#41cac0;
+    position:absolute;
+    top:2px;
+    width:540px;
+    left:12px;
+}
+.order-progress .c .current-status2{
+    height:5px;
+    background:#41cac0;
+    position:absolute;
+    top:2px;
+    width:1065px;
+    left:12px;
+}
