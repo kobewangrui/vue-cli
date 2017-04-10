@@ -86,7 +86,6 @@
                     <p>
                         <span class="right-now" v-if="$index%5==0">即时</span>
                         <span class="spicial-price" v-else-if="$index%4==0">特价</span>
-                        <span class="TAC" v-else-if="$index%6==0">TAC</span>
                     </p>
                     <p>
                         <span>出发地：山西</span>
