@@ -1,6 +1,6 @@
 <style src="assets/css/calendar.css" scoped></style>
 <template>
-    <div class="doubleCalendar" v-if="calenarHide">
+    <div class="doubleCalendar" v-show="calenarHide">
         <div class="calendar leftCalendar">
             <p class="headDate">
                 <span class="prevMonth" @click="prevMonth"> < </span>
@@ -25,7 +25,7 @@
             </ul>
             <table class="table">
                 <tr v-for="item in days2">
-                    <td v-for="key in item" :class="{'active':new Date().getDate() == key}" @click="propsDate2(key)">{{key}}</td>
+                    <td v-for="key in item" :class="{'active':new Date().getDate() == key}" @click="propsDate(key)">{{key}}</td>
                 </tr>
             </table>
         </div>
