@@ -173,6 +173,7 @@ export default {
     },
     mounted(){
         this.calendarToggle();
+        this.clickOtherHide();
     },
     watch:{
         "$route.query":{
@@ -234,6 +235,16 @@ export default {
             }else if($(".doubleCalendar").position().left === 285){
                 this.end = date;
             }
+        },
+        clickOtherHide(){
+            $(document).click(function(event){
+                var _con = $(".doubleCalendar");
+                var _con2 = $(".start");
+                var _con3 = $(".end");
+                if((!_con.is(event.target) && (_con.has(event.target).length ===0)) && (!_con2.is(event.target) && (_con2.has(event.target).length ===0)) && !_con3.is(event.target) && (_con3.has(event.target).length ===0)){
+                    $(".doubleCalendar").slideUp(300);                
+                }
+            });
         }
     },
     components:{
