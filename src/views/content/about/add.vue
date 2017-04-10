@@ -4,10 +4,10 @@
         <about-scoll></about-scoll>
         <div class="content-right">
             <div class="img">
-                <img src="">
+                <img :src="require('assets/image/swiper4.jpg')">
             </div>
             <div class="title">加入我们</div>
-            <p class="eMailArs">如果您有意向，请将个人简历投递至此邮箱：hr@gaiatrip.com</p>
+            <p class="eMailArs">如果您有意向，请将个人简历投递至此邮箱：kobewangrui@163.com</p>
             <div>
                 <p class="position">平面设计师</p>
                 <p class="workRange">岗位职责：</p>

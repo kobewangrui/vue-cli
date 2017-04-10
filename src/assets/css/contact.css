@@ -31,6 +31,17 @@
     width: 820px;
     height: 300px;
 }
+@keyframes flash{
+    0%   {transform: rotate(0deg)}
+    20%   {transform: rotate(-1deg)}
+    40%   {transform: rotate(1deg)}
+    60%   {transform: rotate(0deg)}
+    80%   {transform: rotate(-1deg)}
+    100%   {transform: rotate(0deg)}
+}
+.content-right img:hover{
+    animation: flash .3s;
+}
 .content-right .title{
     font-size: 24px;
     color: #000;
