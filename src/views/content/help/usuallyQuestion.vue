@@ -11,17 +11,17 @@
             <li>
                 <p></p>
                 <p>客服QQ</p>
-                <p>3102317067</p>
+                <p>862452159</p>
             </li>
             <li>
                 <p></p>
                 <p>客服电话</p>
-                <p>400-9900-516</p>
+                <p>177-4926-8844</p>
             </li>
             <li>
                 <p></p>
                 <p>客服邮箱</p>
-                <p>support@gaiatrip.com</p>
+                <p>kobewangrui@163.com</p>
             </li>
         </ul>
     </div>
