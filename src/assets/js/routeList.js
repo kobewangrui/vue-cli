@@ -165,6 +165,8 @@ export default {
         this.routeData = this.$route.query.groupWay;
         this.priceStarts = this.$route.query.priceStart;
         this.priceEnds = this.$route.query.priceEnd;
+        this.start = this.$route.query.travelTimeStart;
+        this.end = this.$route.query.travelTimeEnd;
     },
     beforeMount(){
         this.fetchData()
@@ -196,6 +198,10 @@ export default {
             // })
         },
         clear(item){
+            if(item ==='travelTimeEnd' || item === 'travelTimeStart'){
+                this.start = undefined
+                this.end = undefined
+            }
             this.query[item]=[];
         },
         dateSubmit(){

@@ -18,7 +18,7 @@
                 </div>
                 <div class="filter">
                     <span class="filter-title">出游时间：</span>
-                    <span class="filter-all">全部</span>
+                    <span class="filter-all" :class="{'checkedAll': this.$route.query.travelTimeStart == undefined || this.$route.query.travelTimeStart.length==0 || this.$route.query.travelTimeEnd == undefined || this.$route.query.travelTimeEnd.length==0}" @click="clear('travelTimeEnd'),clear('travelTimeStart')">全部</span>
                     <span class="dateChoose">
                         <input type="text" class="start" placeholder="请选择" v-model="start" readonly="true">
                         <span></span>
