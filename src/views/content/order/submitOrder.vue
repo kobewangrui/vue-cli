@@ -107,18 +107,18 @@
               <span class="upload-intro">最多上传一个附件，支持WORD、EXCEL及JPG格式。</span>
             </div>
             <div class="exit-fill" v-show="fill">
-                <div class="fill-adult" v-for="i in adultNumber">
+                <div class="fill-adult" v-for="(item,$index) in adult">
                   <table>
                     <tr>
-                      <td>游客{{i}}：</td>
-                      <td><label class="must" :for="'cnName'+i">中文姓名</label></td>
+                      <td>游客{{$index+1}}：</td>
+                      <td><label class="must" :for="'cnName'+$index">中文姓名</label></td>
                       <td>
-                        <input type="text" :id="'cnName'+i" name="cnName" class="langest-input" placeholder="证件的中文姓名">
+                        <input type="text" v-model="item.chinaName" :id="'cnName'+$index" name="cnName" class="langest-input" placeholder="证件的中文姓名">
                       </td>
-                      <td><label class="must" :for="'enName1'+i">英文姓名</label></td>
+                      <td><label class="must" :for="'enName1'+$index">英文姓名</label></td>
                       <td>
-                        <input type="text" :id="'enName1'+i" name="enName1" placeholder="姓（拼音或英文）" class="lang-input">
-                        <input type="text" name="enName2" placeholder="名（拼音或英文）" class="lang-input margin15">
+                        <input type="text" v-model="item.englistName" :id="'enName1'+$index" name="enName1" placeholder="姓（拼音或英文）" class="lang-input">
+                        <input type="text" v-model="item.englistName2" name="enName2" placeholder="名（拼音或英文）" class="lang-input margin15">
                       </td>
                     </tr>
                     <tr>
@@ -127,58 +127,58 @@
                         </td>
                       <td>国籍</td>
                       <td>中国大陆</td>
-                      <td><label :for="'cardName'+i" class="must">证件号</label></td>
+                      <td><label :for="'cardName'+$index" class="must">证件号</label></td>
                       <td class="cardList">
-                        <input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">
+                        <input type="text" class="shorter-input cardToggleC" name="cardName2" readonly="true" v-model="passCard">
                         <span class="cardUl"></span>
                         <ul class="passCardList">
-                          <li v-for="item in cardList" @click="choosepassCard(item)">{{item.name}}</li>
+                          <li v-for="i in cardList" @click="choosepassCard(i)">{{i.name}}</li>
                         </ul>
-                        <input :id="'cardName'+i" name="cardName" type="text" class="langer-input margin15">
+                        <input :id="'cardName'+$index" v-model="item.cardNumber" name="cardName" type="text" class="langer-input margin15">
                       </td>
                     </tr>
                     <tr>
                       <td></td>
                       <td><label class="must">性别</label></td>
                       <td>
-                        <input :id="'man'+i" type="radio" name="sex">
-                        <label :for="'man'+i" class="man"></label>
-                        <label :for="'man'+i">男</label>
+                        <input :id="'man'+$index" type="radio" sign="sex" :name="'sex'+$index" v-model="item.sex" value="1">
+                        <label :for="'man'+$index" class="man"></label>
+                        <label :for="'man'+$index">男</label>
 
-                        <input :id="'woman'+i" type="radio" name="sex">
-                        <label :for="'woman'+i" class="woman"></label>
-                        <label :for="'woman'+i">女</label>
+                        <input :id="'woman'+$index" type="radio" sign="sex" :name="'sex'+$index"  v-model="item.sex" value="2">
+                        <label :for="'woman'+$index" class="woman"></label>
+                        <label :for="'woman'+$index">女</label>
                       </td>
-                      <td><label class="must" :for="'connectNumber' +i">联系电话</label></td>
+                      <td><label class="must"  :for="'connectNumber'+$index">联系电话</label></td>
                       <td>
-                        <input class="langest-input" :id="'connectNumber'+i" name="connectNumber" type="text">
+                        <input class="langest-input" v-model="item.phone" :id="'connectNumber'+$index" name="connectNumber" type="text">
                       </td>
                     </tr>
                     <tr>
                       <td></td>
-                      <td><label class="must" :for="'bornDate'+i">出生日期</label></td>
+                      <td><label class="must"  :for="'bornDate'+$index">出生日期</label></td>
                       <td>
-                        <input type="text" :id="'bornDate'+i" name="bornDate" class="short-input">
+                        <input type="text" v-model="item.bornDate" :id="'bornDate'+$index" name="bornDate" class="short-input">
                       </td>
-                      <td :for="'personCard'+i">身份证号</td>
+                      <td :for="'personCard'+$index">身份证号</td>
                       <td>
-                        <input :id="'personCard'+i" class="langest-input" type="text" placeholder="方便匹配信息">
+                        <input v-model="item.idCard" :id="'personCard'+$index" class="langest-input" type="text" placeholder="方便匹配信息">
                       </td>
                     </tr>
                   </table>
                 </div>
-                <div class="fill-children" v-for="i in childrenNumber">
+                <div class="fill-children" v-for="(item,$index) in child">
                   <table>
                     <tr>
-                      <td>游客{{i}}：</td>
-                      <td><label class="must" :for="'cnNamec'+i">中文姓名</label></td>
+                      <td>游客{{$index}}：</td>
+                      <td><label class="must" :for="'cnNamec'+$index">中文姓名</label></td>
                       <td>
-                        <input type="text" :id="'cnNamec'+i" name="cnName" class="langest-input" placeholder="证件的中文姓名">
+                        <input type="text" v-model="item.chinaName" :id="'cnNamec'+$index" name="cnName" class="langest-input" placeholder="证件的中文姓名">
                       </td>
-                      <td><label class="must" :for="'enName1c'+i">英文姓名</label></td>
+                      <td><label class="must" :for="'enName1c'+$index">英文姓名</label></td>
                       <td>
-                        <input type="text" :id="'enName1c'+i" name="enName1" placeholder="姓（拼音或英文）" class="lang-input">
-                        <input type="text" :id="'enName2c'+i" name="enName2" placeholder="名（拼音或英文）" class="lang-input margin15">
+                        <input type="text" v-model="item.englishName" :id="'enName1c'+$index" name="enName1" placeholder="姓（拼音或英文）" class="lang-input">
+                        <input type="text" v-model="item.englistName2" :id="'enName2c'+$index" name="enName2" placeholder="名（拼音或英文）" class="lang-input margin15">
                       </td>
                     </tr>
                     <tr>
@@ -187,42 +187,42 @@
                         </td>
                       <td>国籍</td>
                       <td>中国大陆</td>
-                      <td><label :for="'cardNamec'+i" class="must">证件号</label></td>
+                      <td><label :for="'cardNamec'+$index" class="must">证件号</label></td>
                       <td class="cardListC">
                         <input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">
                         <span class="cardUl"></span>
                         <ul class="passCardListC">
-                          <li v-for="item in cardList" @click="choosepassCard(item)">{{item.name}}</li>
+                          <li v-for="i in cardList" @click="choosepassCard(i)">{{i.name}}</li>
                         </ul>
-                        <input :id="'cardName2c'+i" name="cardName" type="text" class="langer-input margin15">
+                        <input :id="'cardName2c'+$index" v-model="item.cardNumber" name="cardName" type="text" class="langer-input margin15">
                       </td>
                     </tr>
                     <tr>
                       <td></td>
                       <td><label class="must">性别</label></td>
                       <td>
-                        <input :id="'manc'+i" type="radio" name="sexc">
-                        <label :for="'manc'+i" class="man"></label>
-                        <label :for="'manc'+i">男</label>
+                        <input :id="'manc'+$index" type="radio" sign="sex" :name="'sexc'+$index" v-model="item.sex" value="1">
+                        <label :for="'manc'+$index" class="man"></label>
+                        <label :for="'man'+$index">男</label>
 
-                        <input :id="'womanc'+i" type="radio" name="sexc">
-                        <label :for="'womanc'+i" class="woman"></label>
-                        <label :for="'womanc'+i">女</label>
+                        <input :id="'womanc'+$index" type="radio" sign="sex" :name="'sexc'+$index"  v-model="item.sex" value="2">
+                        <label :for="'womanc'+$index" class="woman"></label>
+                        <label :for="'womanc'+$index">女</label>
                       </td>
-                      <td><label class="must" :for="'connectNumberc'+i">联系电话</label></td>
+                      <td><label class="must" :for="'connectNumberc'+$index">联系电话</label></td>
                       <td>
-                        <input class="langest-input" :id="'connectNumberc'+i" name="connectNumber" type="text">
+                        <input class="langest-input" v-model="item.phone" :id="'connectNumberc'+$index" name="connectNumber" type="text">
                       </td>
                     </tr>
                     <tr>
                       <td></td>
-                      <td><label class="must" :for="'bornDatec'+i">出生日期</label></td>
+                      <td><label class="must" :for="'bornDatec'+$index">出生日期</label></td>
                       <td>
-                        <input type="text" :id="'bornDatec'+i" name="bornDate" class="short-input">
+                        <input type="text" v-model="item.idCard" :id="'bornDatec'+$index" name="bornDate" class="short-input">
                       </td>
                       <td>身份证号</td>
                       <td>
-                        <input class="langest-input" type="text" placeholder="方便匹配信息">
+                        <input class="langest-input" v-model="item.bornDate" type="text" placeholder="方便匹配信息">
                       </td>
                     </tr>
                   </table>
