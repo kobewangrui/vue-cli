@@ -26,16 +26,16 @@
 					<li><img :src="require('assets/image/TD-code.jpg')"/></li>
 				</ul>
 				<ul>
-					<li>400-9900-516</li>
-					<li><span>周一至周日</span><span>9:00——18:00</span></li>
+					<li>177-4926-8844</li>
+					<li><span>周一至周五</span><span>9:00——18:00</span></li>
 				</ul>
 			</div>
 		</div>
 		<div class="container foot-botttom">
 			<div>
-				<span>Copyright © 2016, Gaiya Information Technology Co., Ltd All Rights Reserved.</span>
-				<span>西安盖丫信息技术有限公司</span>
-				<span>陕ICP备15001819号-1</span>
+				<span>Copyright © 2017,  4me Information Technology Co., Ltd All Rights Reserved.</span>
+				<span>4me信息技术有限公司</span>
+				<span>沪ICP备100000000号-4</span>
 				</a>
 			</div>
 		</div>
