@@ -24,6 +24,32 @@ export default{
                     "name":"台湾通行证",
                     "arg":"TWPass"
                 }
+            ],
+            adult:[
+                {
+                    chinaName:undefined,
+                    englistName:undefined,
+                    englistName2:undefined,                    
+                    cardName:undefined,
+                    cardNumber:undefined,
+                    sex:undefined,
+                    phone:undefined,
+                    idCard:undefined,
+                    bornDate:undefined
+                }
+            ],
+            child:[
+                {
+                    chinaName:undefined,
+                    englistName:undefined,
+                    englistName2:undefined,                    
+                    cardName:undefined,
+                    cardNumber:undefined,
+                    sex:undefined,
+                    phone:undefined,
+                    idCard:undefined,
+                    bornDate:undefined
+                }
             ]
         }
     },
@@ -36,6 +62,7 @@ export default{
         this.validateForm();
         this.uploaders();
         $(".webuploader-pick").removeClass("webuploader-pick");
+        this.cardToggles();
     },
     methods:{
         uploaders(){
@@ -76,21 +103,65 @@ export default{
         },
         addChildren(){
             this.childrenNumber++;
+            this.child.push({
+                chinaName:undefined,
+                englistName:undefined,
+                englistName2:undefined,                    
+                cardName:undefined,
+                cardNumber:undefined,
+                sex:undefined,
+                phone:undefined,
+                idCard:undefined,
+                bornDate:undefined
+            })
             this.countPrice = this.childrenNumber * this.childrenPrice + this.adultNumber * this.adultPrice;
         },
         addAdult(){
             this.adultNumber++;
+            this.adult.push({
+                chinaName:undefined,
+                englistName:undefined,
+                englistName2:undefined,                    
+                cardName:undefined,
+                cardNumber:undefined,
+                sex:undefined,
+                phone:undefined,
+                idCard:undefined,
+                bornDate:undefined
+            })
             this.countPrice = this.childrenNumber * this.childrenPrice + this.adultNumber * this.adultPrice;
         },
         reduceChildren(){
             if(this.childrenNumber > 1){
                 this.childrenNumber--;
+                this.child.pop({
+                    chinaName:undefined,
+                    englistName:undefined,
+                    englistName2:undefined,                    
+                    cardName:undefined,
+                    cardNumber:undefined,
+                    sex:undefined,
+                    phone:undefined,
+                    idCard:undefined,
+                    bornDate:undefined
+                })
                 this.countPrice = this.childrenNumber * this.childrenPrice + this.adultNumber * this.adultPrice;
             }
         },
         reduceAdult(){
             if(this.adultNumber > 1){
                 this.adultNumber--;
+                this.adult.pop({
+                    chinaName:undefined,
+                    englistName:undefined,
+                    englistName2:undefined,                    
+                    cardName:undefined,
+                    cardNumber:undefined,
+                    sex:undefined,
+                    phone:undefined,
+                    idCard:undefined,
+                    bornDate:undefined
+                })
                 this.countPrice = this.childrenNumber * this.childrenPrice + this.adultNumber * this.adultPrice;
             }
         },
@@ -112,7 +183,6 @@ export default{
             }else{
                 this.cardListShow = true;
             }
-
         },
         clickOtherHide(){
             var _this = this;
@@ -148,6 +218,14 @@ export default{
                     });
                 }
             }            
+        },
+        cardToggles(){
+            $(".cardToggle").on("click",function(){
+                $(this).closest(".cardList").find(".passCardList").slideToggle(300)
+            })
+            $(".cardToggleC").on("click",function(){
+                $(this).closest(".cardList").find(".passCardListC").slideToggle(300)
+            })
         }
     },
     components:{
