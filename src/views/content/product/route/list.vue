@@ -71,7 +71,7 @@
             </div>
         </div>
         <ul>
-            <li class="line-outer" v-for="(route,$index) in 20">
+            <router-link :to="{path:'/product/route/detail',query:{productId:'cp10000'}}" tag="li" class="line-outer" v-for="(route,$index) in 20" :key="route.id">
                 <div class="line-img">
                     <img :src="require('assets/image/1.jpg')">
                     <span class="after-group" v-if="$index%2==0">跟团</span>
@@ -95,22 +95,22 @@
                         最近团期：<span>2017-05-06</span><span>更多> ></span>
                     </p>
                     <p>供应商：众信假期</p>
-                    <router-link :to="{path:'/product/route/detail',query:{productId:'cp1234567'}}" class="reserve">查看详情</router-link>
+                    <router-link :to="{path:'/product/route/detail',query:{productId:'cp10000'}}" class="reserve">查看详情</router-link>
 
-                        <span class="originalPrice price" v-if="$index%4==0">
+                        <span class="originalPrice price" v-if="$index%4==0 && $index!=0">
                             <span>原结算价：</span>
                             <span>￥1234</span>
                         </span>
-                        <span class="spicialPrice price" v-if="$index%4==0">
+                        <span class="spicialPrice price" v-if="$index%4==0 && $index!=0">
                             <span>特价：</span>
                             <span>￥1234</span>
                         </span>
-                    <span class="innerPrice price" v-if="$index%4!=0">
+                    <span class="innerPrice price" v-if="$index%4!=0 || $index==0">
                         <span>结算价：</span>
                         <span>￥1324</span>
                     </span>
                 </div>
-            </li>
+            </router-link>
         </ul>
         {{pagiNate}}
         <page :paginate='pagiNate'></page>
