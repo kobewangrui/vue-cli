@@ -1,6 +1,7 @@
 .footer{
 	background:white;
 	clear:both;
+	min-width:1200px;
 }
 .container{
 	width: 1200px;

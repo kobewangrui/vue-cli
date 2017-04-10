@@ -343,6 +343,7 @@ ul.nav.dropdown-menu.TD-code {
 	font-size: 16px;
 	position:relative;
 	background:#57c8f2;
+	min-width:1200px;
 }
 .container{
 	width:1200px;
