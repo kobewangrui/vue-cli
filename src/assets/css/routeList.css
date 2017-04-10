@@ -274,3 +274,6 @@ input::-webkit-outer-spin-button {
     display:block;
     font-size:0;
 }
+.page{
+    margin-bottom:60px;
+}
