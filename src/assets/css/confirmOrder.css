@@ -362,10 +362,8 @@
 .order-detail .traveller .exit-fill table tr td .woman{
     margin-left:15px;
 }
-.order-detail .traveller .exit-fill table tr td #woman:checked + .woman,
-.order-detail .traveller .exit-fill table tr td #man:checked + .man,
-.order-detail .traveller .exit-fill table tr td #womanc:checked + .woman,
-.order-detail .traveller .exit-fill table tr td #manc:checked + .man{
+.order-detail .traveller .exit-fill table tr td input[sign='sex']:checked + .woman,
+.order-detail .traveller .exit-fill table tr td input[sign='sex']:checked + .man{
     width:7px;
     height:7px;
     border:3px solid #41cac0;
