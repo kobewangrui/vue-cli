@@ -116,7 +116,6 @@
                 </div>
             </router-link>
         </ul>
-        {{pagiNate}}
         <page :paginate='pagiNate'></page>
     </div>
 </template>
