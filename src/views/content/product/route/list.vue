@@ -3,6 +3,10 @@
 <template>
     <div class="container">
         <div class="routeFilter">
+            <div class="filter-sign">
+                <label class="nav">首页 ></label>
+                <label class="nav">列表 ></label>
+            </div>
             <div class="filter-out">
                 <div class="filter">
                     <span class="filter-title">{{product.title}}：</span>
@@ -21,6 +25,7 @@
                         <input type="text" placeholder="请选择" v-model="query.end" readonly="true" @click="calendarToggle">
                         <button @click="dateSubmit">确定</button>
                         <calendar  :inputDate1="start" v-if="calendarShow"></calendar>
+                        {{start}}
                     </span>
                 </div>
                 <div class="filter">
