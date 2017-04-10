@@ -97,9 +97,12 @@
               <span class="right-intro-upload" :class="{'fillColor':fill}">如果有整理好的名单，可以选择附件上传则无需手动填写。</span>
             </div>
             <div class="upload" v-if="upload">
-              <div class="upload-btn" href="javascript:void(0);">
-                <span>点击上传</span>
-                <span>+</span>
+              <div class="fileList">
+                <p v-for="i in 3">1231456.doc</p>
+              </div>            
+              <div class="upload-btn" href="javascript:void(0);" id="uploader">
+                  <span>点击上传</span>
+                  <span>+</span>
               </div>
               <span class="upload-intro">最多上传一个附件，支持WORD、EXCEL及JPG格式。</span>
             </div>
