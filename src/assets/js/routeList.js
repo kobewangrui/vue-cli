@@ -65,7 +65,6 @@ export default {
         if((typeof query.pageIndex)==='string'){
             query.pageIndex=[query.pageIndex];
         }else{
-            console.log(this.pageIndex)
             query.pageIndex=Object.assign([],this.$route.query.pageIndex)
         }
         return{
