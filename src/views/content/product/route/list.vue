@@ -4,8 +4,8 @@
     <div class="container">
         <div class="routeFilter">
             <div class="filter-sign">
-                <label class="nav">首页 ></label>
-                <label class="nav">列表 ></label>
+                <router-link to="/" tag="lable" class="nav">首页 ></router-link>
+                <router-link to="/product" tag="lable" class="nav">列表 ></router-link>
             </div>
             <div class="filter-out">
                 <div class="filter">
