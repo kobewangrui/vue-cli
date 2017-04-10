@@ -10,7 +10,6 @@ export default{
             upload:true,
             fill:false,
             passCard:"护照",
-            cardListShow:false,
             cardList:[
                 {
                     "name":"护照",
@@ -62,7 +61,7 @@ export default{
         this.validateForm();
         this.uploaders();
         $(".webuploader-pick").removeClass("webuploader-pick");
-        this.cardToggles();
+        // this.cardToggles();
     },
     methods:{
         uploaders(){
@@ -175,20 +174,11 @@ export default{
         },
         choosepassCard(name){
             this.passCard = name.name;
-            this.cardListShow = false;
-        },
-        cardListHide(){
-            if(this.cardListShow === true){
-                this.cardListShow = false;
-            }else{
-                this.cardListShow = true;
-            }
         },
         clickOtherHide(){
             var _this = this;
             $(document).on("click",function(e){
                 if($(e.target).parents(".cardList").children("input,.cardUl").length === 0){
-                    _this.cardListShow = false;
                 }
             })
         },
@@ -220,11 +210,8 @@ export default{
             }            
         },
         cardToggles(){
-            $(".cardToggle").on("click",function(){
+            $(".cardList").on("click",".cardToggle",function(){
                 $(this).closest(".cardList").find(".passCardList").slideToggle(300)
-            })
-            $(".cardToggleC").on("click",function(){
-                $(this).closest(".cardList").find(".passCardListC").slideToggle(300)
             })
         }
     },

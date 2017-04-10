@@ -129,8 +129,9 @@
                       <td>中国大陆</td>
                       <td><label :for="'cardName'+$index" class="must">证件号</label></td>
                       <td class="cardList">
-                        <input type="text" class="shorter-input cardToggleC" name="cardName2" readonly="true" v-model="passCard">
-                        <span class="cardUl"></span>
+                        <input type="text" class="shorter-input cardToggle" name="cardName2" v-model="item.cardName">
+                        <!--<input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">-->
+                        <!--<span class="cardUl"></span>-->
                         <ul class="passCardList">
                           <li v-for="i in cardList" @click="choosepassCard(i)">{{i.name}}</li>
                         </ul>
@@ -189,8 +190,9 @@
                       <td>中国大陆</td>
                       <td><label :for="'cardNamec'+$index" class="must">证件号</label></td>
                       <td class="cardListC">
-                        <input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">
-                        <span class="cardUl"></span>
+                        <input type="text" class="shorter-input cardToggleC" name="cardName2" v-model="item.cardName">
+                        <!--<input type="text" class="shorter-input cardToggleC" name="cardName2" readonly="true" v-model="passCard">-->
+                        <!--<span class="cardUl"></span>-->
                         <ul class="passCardListC">
                           <li v-for="i in cardList" @click="choosepassCard(i)">{{i.name}}</li>
                         </ul>

@@ -394,6 +394,7 @@
     overflow:hidden;
     top:29px;
     z-index:1;
+    display:none;
 }
 .order-detail .traveller .exit-fill table tr td .passCardList li,
 .order-detail .traveller .exit-fill table tr td .passCardListC li{
