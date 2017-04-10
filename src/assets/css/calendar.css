@@ -8,7 +8,7 @@
 .calendar{
     width:235px;
     height:248px;
-    box-shadow:00 5px rgba(226,226,226,.3);
+    box-shadow:0 0 3px rgba(0,0,0,.3);
     background:#fff;
     margin:10px auto 10px;
     overflow:hidden;
