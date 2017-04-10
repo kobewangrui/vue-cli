@@ -24,7 +24,7 @@
             <div class="group-content">
                 <span>
                   <span class="title">产品编号：</span>
-                  <span>589478632</span>
+                  <span>{{$route.query.productId}}</span>
                 </span>
                 <span class="right">
                   <span class="title">往返交通：</span>
@@ -57,7 +57,7 @@
                 </span>
                 <span class="right">
                   <span class="title">出团日期：</span>
-                  <span class="date"><input type="text"></span>
+                  <span class="date"><input type="text" readonly="true" v-model="$route.query.date"></span>
                 </span>
             </div>
             <div class="group-content last-line">
@@ -96,7 +96,7 @@
               <span class="toggle-table" @click="uploadShow" :class="{'currentTable':fill}">附件上传</span>
               <span class="right-intro-upload" :class="{'fillColor':fill}">如果有整理好的名单，可以选择附件上传则无需手动填写。</span>
             </div>
-            <div class="upload" v-if="upload">
+            <div class="upload" v-show="upload">
               <div class="fileList">
                 <p v-for="i in 3">1231456.doc</p>
               </div>            
@@ -106,7 +106,7 @@
               </div>
               <span class="upload-intro">最多上传一个附件，支持WORD、EXCEL及JPG格式。</span>
             </div>
-            <div class="exit-fill" v-if="fill">
+            <div class="exit-fill" v-show="fill">
                 <div class="fill-adult" v-for="i in adultNumber">
                   <table>
                     <tr>
@@ -129,9 +129,9 @@
                       <td>中国大陆</td>
                       <td><label :for="'cardName'+i" class="must">证件号</label></td>
                       <td class="cardList">
-                        <input type="text" class="shorter-input" name="cardName2" readonly="true" v-model="passCard" @click="cardListHide">
-                        <span class="cardUl" @click="cardListHide"></span>
-                        <ul class="passCardList" v-if="cardListShow">
+                        <input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">
+                        <span class="cardUl"></span>
+                        <ul class="passCardList">
                           <li v-for="item in cardList" @click="choosepassCard(item)">{{item.name}}</li>
                         </ul>
                         <input :id="'cardName'+i" name="cardName" type="text" class="langer-input margin15">
@@ -189,9 +189,9 @@
                       <td>中国大陆</td>
                       <td><label :for="'cardNamec'+i" class="must">证件号</label></td>
                       <td class="cardListC">
-                        <input type="text" class="shorter-input" name="cardName2" readonly="true" v-model="passCard" @click="cardListHide">
-                        <span class="cardUl" @click="cardListHide"></span>
-                        <ul class="passCardListC" v-if="cardListShow">
+                        <input type="text" class="shorter-input cardToggle" name="cardName2" readonly="true" v-model="passCard">
+                        <span class="cardUl"></span>
+                        <ul class="passCardListC">
                           <li v-for="item in cardList" @click="choosepassCard(item)">{{item.name}}</li>
                         </ul>
                         <input :id="'cardName2c'+i" name="cardName" type="text" class="langer-input margin15">
