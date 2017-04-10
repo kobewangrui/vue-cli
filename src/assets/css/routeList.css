@@ -6,37 +6,6 @@ input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 /*router filter*/
-.filter-sign{
-    font-size:14px;
-    line-height:60px;
-}
-.filter-sign>label.nav:hover{
-    color:#57c8f2;
-}
-.filter-sign>label:nth-child(3){
-    margin-left:5px;
-}
-.filter-sign>label.sign{
-    display:inline-block;
-    height:26px;
-    padding:0 10px;
-    border:1px solid #57c8f2;
-    line-height:26px;
-    border-radius:4px;
-    text-align:center;
-    margin-right:10px;
-    color:#2a3542;
-    font-size:14px;
-}
-.filter-sign>label.sign>span{
-    margin-left:8px;
-    font-weight:bold;
-    font-size:16px;
-}
-.filter-sign>label.sign:hover{
-    color:#ff6c60;
-    border:1px solid #ff6c60;
-}
 .filter-out{
     font-size:14px;
     color:#464646;
