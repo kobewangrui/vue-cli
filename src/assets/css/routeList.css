@@ -236,7 +236,7 @@ input::-webkit-outer-spin-button {
     top:50px;
 }
 .line-outer .line-detail .originalPrice{
-    top:30px;
+    top:15px;
     text-decoration:line-through;
     color:#999;
 }
