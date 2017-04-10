@@ -14,7 +14,7 @@ export default{
             curDay2:undefined,
             days2:[],
 
-            calenarHide:true
+            calenarHide:true,
         }
     },
     props:[
@@ -139,13 +139,11 @@ export default{
         // 日期传给父组件input
         propsDate(day){
             this.calenarHide = false;
-            console.log(this.curYear+"-"+this.curMonth+"-"+day);
-            // this.inputDate1 = this.curYear+"-"+this.curMonth+"-"+day;
-        },
-        propsDate2(day){
-            this.calenarHide = false;
-            console.log(this.curYear+"-"+this.curMonth+"-"+day);
-            // this.inputDate2 = this.curYear2+"-"+this.curMonth2+"-"+day;
+            this.curMonth = parseInt(this.curMonth);
+            this.curMonth<10 ? this.curMonth='0'+this.curMonth : this.curMonth;
+            day<10 ? day='0' + day:day;
+            let chooseDate = this.curYear+"-"+this.curMonth+"-"+day;
+             this.$emit('ievent',chooseDate)
         }
     },
 }
