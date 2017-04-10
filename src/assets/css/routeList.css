@@ -12,6 +12,7 @@ input::-webkit-outer-spin-button {
 }
 .filter-sign > label.nav:hover{
     color:#57c8f2;
+    cursor:pointer;
 }
 .filter-out{
     font-size:14px;
