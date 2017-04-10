@@ -200,7 +200,7 @@
                 <a href="#remark"><li>备注</li></a>
                 <a href="#options"><li>附件</li></a>
                 <li class="tableConnect" @click="popChange">联系商家</li>
-                <router-link :to="{path:'/mall/confirmOrder',query:{productId:'cp10000'}}" class="tableReserve" tag="li">立即预定</router-link>
+                <router-link :to="{path:'/order',query:{productId:'cp10000'}}" class="tableReserve" tag="li">立即预定</router-link>
                 <!--<li class="tableReserve">暂无权限</li>-->
             </ul>
             <div class="routeFeature">
