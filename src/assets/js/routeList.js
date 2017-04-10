@@ -68,19 +68,15 @@ export default {
             query.pageIndex=Object.assign([],this.$route.query.pageIndex)
         }
         return{
-            routes:[],
-
             pagiNate:{
                 pageIndex:0,
                 pageMaxIndex:10
             },
             query:query,
-            calendarShow:false,
-            start:'2016-12-25',
-            end:'2016-12-29',
-            priceStarts:'',
-            priceEnds:'',
-            routeData:[],
+            start:undefined,
+            end:undefined,
+            priceStarts:undefined,
+            priceEnds:undefined,
             product:{
                 title:"产品类型",
                 type:"groupWay",
@@ -173,6 +169,9 @@ export default {
     beforeMount(){
         this.fetchData()
     },
+    mounted(){
+        this.calendarToggle();
+    },
     watch:{
         "$route.query":{
             handler:function(){
@@ -208,10 +207,26 @@ export default {
             this.query.priceEnd = this.priceEnds;
         },
         calendarToggle(){
-            if(this.calendarShow){
-                this.calendarShow = false;
-            }else{
-                this.calendarShow = true;
+            $(".start").click(function(){
+                if($(".doubleCalendar").css('display') === 'block' && $(".doubleCalendar").position().left === 170){
+                    $(".doubleCalendar").slideUp(300);
+                }else{
+                    $(".doubleCalendar").css({'left':170}).slideDown(300);            
+                }
+            })
+            $(".end").click(function(){
+                if($(".doubleCalendar").css('display') === 'block' && $(".doubleCalendar").position().left === 285){
+                    $(".doubleCalendar").slideUp(300);
+                }else{
+                    $(".doubleCalendar").css({'left':285}).slideDown(300)
+                }
+            })
+        },
+        ievent(date){
+            if($(".doubleCalendar").position().left === 170){
+                this.start = date;
+            }else if($(".doubleCalendar").position().left === 285){
+                this.end = date;
             }
         }
     },
