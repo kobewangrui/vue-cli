@@ -170,7 +170,7 @@
                 <div class="fill-children" v-for="(item,$index) in child">
                   <table>
                     <tr>
-                      <td>游客{{$index}}：</td>
+                      <td>游客{{$index+1}}：</td>
                       <td><label class="must" :for="'cnNamec'+$index">中文姓名</label></td>
                       <td>
                         <input type="text" v-model="item.chinaName" :id="'cnNamec'+$index" name="cnName" class="langest-input" placeholder="证件的中文姓名">
@@ -203,7 +203,7 @@
                       <td>
                         <input :id="'manc'+$index" type="radio" sign="sex" :name="'sexc'+$index" v-model="item.sex" value="1">
                         <label :for="'manc'+$index" class="man"></label>
-                        <label :for="'man'+$index">男</label>
+                        <label :for="'manc'+$index">男</label>
 
                         <input :id="'womanc'+$index" type="radio" sign="sex" :name="'sexc'+$index"  v-model="item.sex" value="2">
                         <label :for="'womanc'+$index" class="woman"></label>
