@@ -20,12 +20,11 @@
                     <span class="filter-title">出游时间：</span>
                     <span class="filter-all">全部</span>
                     <span class="dateChoose">
-                        <input type="text" placeholder="请选择" v-model="query.start" readonly="true" @click="calendarToggle">
+                        <input type="text" class="start" placeholder="请选择" v-model="start" readonly="true">
                         <span></span>
-                        <input type="text" placeholder="请选择" v-model="query.end" readonly="true" @click="calendarToggle">
+                        <input type="text" class="end" placeholder="请选择" v-model="end" readonly="true">
                         <button @click="dateSubmit">确定</button>
-                        <calendar  :inputDate1="start" v-if="calendarShow"></calendar>
-                        {{start}}
+                        <calendar @ievent="ievent" :inputDate1="start" :inputDate2="end"></calendar>
                     </span>
                 </div>
                 <div class="filter">
