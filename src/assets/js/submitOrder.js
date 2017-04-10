@@ -32,30 +32,48 @@ export default{
     },
     mounted(){
         this.a();
-        $("#orderSubmit").validate({
-            rules:{
-                contacts:"required",
-                phoneNumber:"required",
-                cnName:"required",
-                enName1:"required",
-                enName2:"required",
-                cardName:"required",
-                cardName2:"required",
-                sex:"required",
-                connectNumber:"required",
-                bornDate:"required"
-            },
-            errorPlacement: function(error, element) {//隐藏验证消息
-            },
-            submitHandler:function(form){
-                //此处应该提交订单数据
-                window.location.href = 'order/pay'
-                return false
-            }    
-        })
         this.clickOtherHide();
+        this.validateForm();
+        this.uploaders();
+        $(".webuploader-pick").removeClass("webuploader-pick");
     },
     methods:{
+        uploaders(){
+            var uploader = WebUploader.create({
+                // swf文件路径
+                // swf: 'path_of_swf/Uploader.swf',
+                // 文件接收服务端。
+                server: 'http://webuploader.duapp.com/server/fileupload.php',
+                // 选择文件的按钮。可选。
+                // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+                pick: '#uploader',
+                // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+                resize: false
+            });
+        },
+        validateForm(){
+            $("#orderSubmit").validate({
+                rules:{
+                    contacts:"required",
+                    phoneNumber:"required",
+                    cnName:"required",
+                    enName1:"required",
+                    enName2:"required",
+                    cardName:"required",
+                    cardName2:"required",
+                    sex:"required",
+                    connectNumber:"required",
+                    bornDate:"required"
+                },
+                errorPlacement: function(error, element) {//隐藏验证消息
+                },
+                submitHandler:function(form){
+                    //此处应该提交订单数据
+                    window.location.href = 'order/pay'
+                    return false
+                }    
+            })
+        },
         addChildren(){
             this.childrenNumber++;
             this.countPrice = this.childrenNumber * this.childrenPrice + this.adultNumber * this.adultPrice;
