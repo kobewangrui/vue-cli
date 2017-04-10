@@ -201,9 +201,6 @@ input::-webkit-outer-spin-button {
 .line-outer .line-detail p:nth-child(2) span.right-now{
     background:#41cac0;
 }
-.line-outer .line-detail p:nth-child(2) span.TAC{
-    background:#57c8f2;
-}
 .line-outer .line-detail p:nth-child(2) span.spicial-price{
     background:#ff6c60;
 }
