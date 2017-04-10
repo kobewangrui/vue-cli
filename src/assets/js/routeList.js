@@ -66,6 +66,7 @@ export default {
             query.pageIndex=[query.pageIndex];
         }else{
             query.pageIndex=Object.assign([],this.$route.query.pageIndex)
+            this.$route.query.pageIndex= 5
         }
         return{
             pagiNate:{
