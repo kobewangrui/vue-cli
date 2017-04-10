@@ -3,9 +3,9 @@
 	<div class="mall">
 		<div class="first">
 			<div class="container">
-				<a class="logo">
+				<router-link to="/" class="logo">
 					<img :src="require('assets/image/logo.png')" alt="旅游批发平台">
-				</a>
+				</router-link>
 				<div class="place">
 					<span>西安</span>
 					<span class="placeicon"></span>
