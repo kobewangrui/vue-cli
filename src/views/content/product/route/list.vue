@@ -3,12 +3,6 @@
 <template>
     <div class="container">
         <div class="routeFilter">
-            <div class="filter-sign">
-                <label class="nav">首页</label> > <label class="nav">大理</label> >
-                <label class="sign" :for="item" v-for="item in this.$route.query.groupWay"v-if="item=='PACKAGED'?productSign='跟团':(item=='LOCAL'?productSign='地接':(item=='HALF_SELF'?productSign='半自助':(item=='ALL_SELF'?productSign='自助':(item=='CRUISES'?productSign='邮轮':(item=='DRIVE_SELF'?productSign='自驾':productSign='其他')))))">{{productSign}}<span>×</span></label>
-                <label class="sign" :for="item" v-for="item in this.$route.query.traffic" v-if="item=='PLAIN'?trafficSign='飞机':(item=='TRAIN'?trafficSign='火车':(item=='BUS'?trafficSign='大巴':(item=='SOLOFLY'?trafficSign='单卧单飞':trafficSign='其他')))">{{trafficSign}}<span>×</span></label>
-                <label class="sign" :for="item" v-for="item in this.$route.query.days" v-if="item=='ONE'?daysSign='1-2天':(item=='THREE'?daysSign='3-5天':(item=='SIX'?daysSign='6-8天':daysSign='9天以上'))">{{daysSign}}<span>×</span></label>
-            </div>
             <div class="filter-out">
                 <div class="filter">
                     <span class="filter-title">{{product.title}}：</span>
