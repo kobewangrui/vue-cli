@@ -2,17 +2,24 @@ export default{
     data(){
         return{
             week:["日","一","二","三","四","五","六"],
-            curYear:'',
-            curMonth:'',
-            curDay:'',
-            rows:'',
+
+            curYear:undefined,
+            curMonth:undefined,
+            curDay:undefined,
             days:[],
-            todayDate:'',
+            todayDate:undefined,
+
+            curYear2:undefined,
+            curMonth2:undefined,
+            curDay2:undefined,
+            days2:[],
+
             calenarHide:true
         }
     },
     props:[
-        'inputDate1'
+        'inputDate1',
+        'inputDate2'
     ],
     mounted(){
         var date=new Date;
@@ -21,6 +28,11 @@ export default{
         this.getcurMonthDays(this.curYear,this.curMonth);
         //绘制当月日历
         this.days = this.init(this.curYear,this.curMonth);
+
+        this.getcurMonthDays(this.curYear2,this.curMonth2);
+        //绘制当月日历2
+        this.days2 = this.init(this.curYear2,this.curMonth2);
+
     },
     methods:{
         //获取当前年、月、日
@@ -29,12 +41,19 @@ export default{
             this.curYear = date.getFullYear();
             this.curMonth = date.getMonth()+1;
             this.curDay = date.getDate();
+
+            this.curYear2 = date.getFullYear();
+            this.curMonth2 = date.getMonth()+2;
+            this.curDay2 = date.getDate();
         },
+
         //获取某年某月总天数
         getcurMonthDays(year,month){
             var allDays = new Date(year,month,0).getDate()
             return allDays
         },
+
+
         init(calendarY,calendarM){
             var ARRAY=[],obj=[],j=0;
             this.daysArray=this.makeCalendar(calendarY,calendarM);
@@ -56,6 +75,8 @@ export default{
             }
             return obj;
         },
+
+
         makeCalendar(year,month){
                 var maxDay=this.getcurMonthDays(year,month);
                 var firstDayOfWeek=new Date(year,month,-(maxDay-1)).getDay();
@@ -80,28 +101,51 @@ export default{
                 }
                 return result;
         },
+
         //上个月
         prevMonth(){
-            this.curMonth--;
-             if(this.curMonth <= 0){
+            this.curMonth--;            
+            this.curMonth2--;
+            if(this.curMonth <= 0){
                  this.curMonth = 12;
                  this.curYear -= 1;
              }
+            if(this.curMonth2 <= 0){
+                 this.curMonth2 = 12;
+                 this.curYear2 -= 1;
+             }
             this.days = this.init(this.curYear,this.curMonth);
+            this.days2 = this.init(this.curYear2,this.curMonth2);            
         },
+
+
         //下个月
         nextMonth(){
             this.curMonth++;
-             if(this.curMonth > 12){
+            this.curMonth2++;
+            if(this.curMonth > 12){
                  this.curMonth = 1;
                  this.curYear += 1;
              }
+            if(this.curMonth2 > 12){
+                 this.curMonth2 = 1;
+                 this.curYear2 += 1;
+             }
             this.days = this.init(this.curYear,this.curMonth);
+            this.days2 = this.init(this.curYear2,this.curMonth2);
         },
+
+
         // 日期传给父组件input
         propsDate(day){
             this.calenarHide = false;
-            this.inputDate1 = this.curYear+"-"+this.curMonth+"-"+day;
+            console.log(this.curYear+"-"+this.curMonth+"-"+day);
+            // this.inputDate1 = this.curYear+"-"+this.curMonth+"-"+day;
+        },
+        propsDate2(day){
+            this.calenarHide = false;
+            console.log(this.curYear+"-"+this.curMonth+"-"+day);
+            // this.inputDate2 = this.curYear2+"-"+this.curMonth2+"-"+day;
         }
     },
 }
