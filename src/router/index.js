@@ -135,5 +135,20 @@ export default function (VueRouter) {
     mode: 'history',
     routes
   })
+    // 登录拦截
+    // router.beforeEach((to, from, next) => {
+    //   console.warn('beforeEach')
+    //   console.warn(to.fullPath)
+    //   if(true && to.path != '/login'){
+    //     console.log('尚未登录')
+    //     next({
+    //       path: '/login'
+    //     })
+    //   }else{
+    //     console.warn('登录成功')
+    //     next()
+    //   }
+    // })
+
   return router
 }
